@@ -1,16 +1,9 @@
-class PagesController < ActionController
+class PagesController < ApplicationController
+
   def index
-	render :action => "header"
-	render :action => "top-nav"
-	render :action => "side-nav"
-	render :action => "index"
+
   end
 
-  def top-nav
-  end
-
-  def side-nav
-  end
   
   def header
   end
@@ -22,5 +15,10 @@ class PagesController < ActionController
   end
   
   def myLocations
+  end
+  def top_nav
+  end
+
+  def side_nav
   end
 end
