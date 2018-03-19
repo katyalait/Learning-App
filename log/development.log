@@ -189,3 +189,226 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 148ms (Views: 146.6ms)
 
 
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:18:06 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.5ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myLearning.html.erb within layouts/application (22.1ms)
+Completed 500 Internal Server Error in 789ms
+
+
+  
+ActionView::Template::Error (Missing partial pages/_end_of_side_nav, application/_end_of_side_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/katelait/Desktop/Learning-App/app/views"
+):
+    4:                     <li>
+    5:                         <a href="addTopic.html"><i class="fa fa-pencil fa-fw"></i> Add Topic</a>
+    6:                     </li>
+    7: <%= render @pages || "end_of_side_nav" %>
+    8:   
+    9:   <div id="page-wrapper">
+   10:         <div class="row">
+  
+app/views/pages/myLearning.html.erb:7:in `_app_views_pages_my_earning_html_erb___909277139_21395830'
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:18:44 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.7ms)
+  Rendered pages/_top_nav.html.erb (0.9ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLearning.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 1024ms (Views: 1014.1ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:23:28 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.6ms)
+  Rendered pages/_top_nav.html.erb (2.6ms)
+  Rendered pages/_side_nav.html.erb (1.2ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 985ms (Views: 982.7ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:24:16 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.4ms)
+  Rendered pages/_top_nav.html.erb (0.9ms)
+  Rendered pages/_side_nav.html.erb (1.6ms)
+  Rendered pages/_end_side_nav.html.erb (0.6ms)
+  Rendered pages/myLearning.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 1788ms (Views: 1352.2ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:24:22 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (1.1ms)
+  Rendered pages/_top_nav.html.erb (3.9ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/_end_side_nav.html.erb (0.5ms)
+  Rendered pages/myLearning.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 241ms (Views: 239.2ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:24:23 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.3ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 112ms (Views: 110.6ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:24:24 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.4ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 111ms (Views: 109.5ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:42:06 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.4ms)
+  Rendered pages/_top_nav.html.erb (1.1ms)
+  Rendered pages/_side_nav.html.erb (1.2ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 98ms (Views: 96.2ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:42:11 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.3ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 49ms (Views: 48.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:42:12 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.4ms)
+  Rendered pages/_top_nav.html.erb (1.0ms)
+  Rendered pages/_side_nav.html.erb (2.0ms)
+  Rendered pages/_end_side_nav.html.erb (11.8ms)
+  Rendered pages/myLearning.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 71ms (Views: 69.9ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:42:12 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (1.7ms)
+  Rendered pages/_top_nav.html.erb (1.2ms)
+  Rendered pages/_side_nav.html.erb (1.0ms)
+  Rendered pages/_end_side_nav.html.erb (1.0ms)
+  Rendered pages/myLearning.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 80ms (Views: 78.9ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:42:27 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.6ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (3.3ms)
+  Rendered pages/_end_side_nav.html.erb (1.0ms)
+  Rendered pages/myLearning.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 56ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'script' with type 'application/javascript'
+Checked in these paths: 
+  /home/katelait/Desktop/Learning-App/app/assets/config
+  /home/katelait/Desktop/Learning-App/app/assets/images
+  /home/katelait/Desktop/Learning-App/app/assets/javascripts
+  /home/katelait/Desktop/Learning-App/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/fonts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actioncable-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionview-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/katelait/Desktop/Learning-App/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:31
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___382563072_45246840'
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:42:53 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.5ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/_end_side_nav.html.erb (2.5ms)
+  Rendered pages/myLearning.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 435ms (Views: 433.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:42:55 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.3ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/_end_side_nav.html.erb (0.2ms)
+  Rendered pages/myLearning.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 72ms (Views: 71.2ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:42:56 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.2ms)
+  Rendered pages/_top_nav.html.erb (0.2ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/_end_side_nav.html.erb (0.2ms)
+  Rendered pages/myLearning.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 87ms (Views: 86.5ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:42:57 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.4ms)
+  Rendered pages/_top_nav.html.erb (1.3ms)
+  Rendered pages/_side_nav.html.erb (0.7ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLearning.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 151ms (Views: 149.5ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-19 20:42:57 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.4ms)
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLearning.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 128ms (Views: 126.9ms)
+
+

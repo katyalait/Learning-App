@@ -12,4 +12,22 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap
+/*= require donut
+* = require excanvas
+* = require flot-data
+* = require jquery.flot
+* = require jquery.flot.pie
+* = require jquery.flot.resize
+* = require jquery.flot.time
+* = require jquery.flot.tooltip
+* = require jquery
+* = require metisMenu
+* = require morris
+* = require morris-data
+* = require myOwn
+* = require raphael
+* = require sb-admin-2
+* = require scripts
+* = require cable
+*/
