@@ -159,3 +159,33 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 902ms (Views: 899.8ms)
 
 
+Started GET "/pages/index" for 127.0.0.1 at 2018-03-19 18:45:14 +0000
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.9ms)
+  Rendered pages/_top_nav.html.erb (1.9ms)
+  Rendered pages/_side_nav.html.erb (0.8ms)
+  Rendered pages/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 1842ms (Views: 1333.7ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2018-03-19 18:46:09 +0000
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/_header.html.erb (0.7ms)
+  Rendered pages/_top_nav.html.erb (0.8ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 126ms (Views: 124.4ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2018-03-19 18:48:04 +0000
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/_header.html.erb (1.3ms)
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 148ms (Views: 146.6ms)
+
+
