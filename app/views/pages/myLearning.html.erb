@@ -1,4 +1,33 @@
-<%= render @pages || "header" %>
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      <title>My Learning</title>
+ <%= stylesheet_link_tag    'application', media: 'all'%>
+	<%= javascript_include_tag 'application' %>
+	<%= javascript_include_tag 'flot-data' %>
+       <%= javascript_include_tag 'bootstrap' %>
+ <%= javascript_include_tag 'excanvas' %>
+<%= javascript_include_tag 'jquery' %>
+<%= javascript_include_tag 'metisMenu' %>
+<%= javascript_include_tag 'scripts' %> 
+<%= javascript_include_tag 'sb-admin-2' %>
+<%= javascript_include_tag 'raphael' %> 
+<%= javascript_include_tag 'morris' %> 
+<%= javascript_include_tag 'jquery.flot' %>
+<%= javascript_include_tag 'jquery.flot.pie' %>
+<%= javascript_include_tag 'jquery.flot.resize' %>
+<%= javascript_include_tag 'jquery.flot.time' %> 
+<%= javascript_include_tag 'jquery.flot.tooltip' %><!--
+-->
+<%= csrf_meta_tags %>
+</head>
 <%= render @pages || "top_nav" %>
 <%= render @pages || "side_nav" %>
                     <li>
@@ -76,8 +105,8 @@
                 </div>
 			</div>
 		</div>
-    </div>
-		
+    
+</div>
 	
 </body>
 </html>
