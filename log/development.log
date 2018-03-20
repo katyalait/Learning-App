@@ -1932,3 +1932,134 @@ Processing by PagesController#myLearning as HTML
 Completed 200 OK in 276ms (Views: 273.7ms)
 
 
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-20 17:24:08 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.2ms)
+  Rendered pages/_end_side_nav.html.erb (0.2ms)
+  Rendered pages/myLearning.html.erb within layouts/application (761.9ms)
+Completed 200 OK in 1120ms (Views: 773.3ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-20 17:24:16 +0000
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/_end_side_nav.html.erb (0.2ms)
+  Rendered pages/myLocations.html.erb within layouts/application (150.7ms)
+Completed 200 OK in 155ms (Views: 152.9ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-20 17:24:21 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (168.6ms)
+Completed 200 OK in 178ms (Views: 175.7ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-20 17:24:24 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (2.0ms)
+  Rendered pages/_side_nav.html.erb (1.8ms)
+  Rendered pages/_end_side_nav.html.erb (1.2ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (165.5ms)
+Completed 200 OK in 172ms (Views: 169.8ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-20 17:25:12 +0000
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.5ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/_end_side_nav.html.erb (0.6ms)
+  Rendered pages/myLocations.html.erb within layouts/application (94.2ms)
+Completed 200 OK in 98ms (Views: 96.4ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-20 17:25:13 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLearning.html.erb within layouts/application (136.0ms)
+Completed 200 OK in 140ms (Views: 138.4ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-20 17:25:14 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (131.0ms)
+Completed 200 OK in 134ms (Views: 133.2ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-20 17:25:23 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.7ms)
+  Rendered pages/_end_side_nav.html.erb (1.0ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (133.7ms)
+Completed 200 OK in 138ms (Views: 136.5ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-20 17:25:51 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.0ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (1.6ms)
+  Rendered pages/myLearning.html.erb within layouts/application (135.2ms)
+Completed 200 OK in 139ms (Views: 138.4ms)
+
+
+Started GET "/pages/addTopic" for 127.0.0.1 at 2018-03-20 17:26:05 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/pages/addTopic"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-20 17:27:08 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.9ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/_end_side_nav.html.erb (0.2ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (73.2ms)
+Completed 200 OK in 76ms (Views: 74.7ms)
+
+
