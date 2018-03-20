@@ -1,2 +1,130 @@
-<h1>Pages#myLocations</h1>
-<p>Find me in app/views/pages/myLocations.html.erb</p>
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>My Locations</title>
+<%= stylesheet_link_tag    'application', media: 'all'%>
+<%= javascript_include_tag 'application' %>
+<%= csrf_meta_tags %>
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyBq2SJer3ZCQsjjMu-xZejLTKZiViLVCPg&callback=initMap", async: Rails.env.production? %>
+</head>
+ <%= render @pages || "top_nav" %>
+<%= render @pages || "side_nav" %>
+<%= render @pages || "end_side_nav" %>
+
+<div id="page-wrapper">
+	<div class = "row" >
+	<div class ="col-lg-1"> </div>
+	<div class = "col-lg-9" > 
+        <iframe width="700"
+                height="300"
+                align="middle"
+		margin= "10"
+                frameborder="2" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBq2SJer3ZCQsjjMu-xZejLTKZiViLVCPg&q=Trinity+College+Dublin" allowfullscreen>
+
+        </iframe>
+</div>
+<div class = "col-lg-2"> </div>
+</div>
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <div class="table">
+                        <table class="table table-hover table-condensed">
+                            <thead>
+                                <tr>
+                                    <th scope="col"> </th>
+                                    <th scope="col">Visit/Purpose</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <select class="form-control" id="loc1">
+                                            <option>Select One</option>
+                                            <option>Coffee</option>
+                                            <option>Study</option>
+                                            <option>Entertainment</option>
+                                        </select>
+                                    </td>
+                                    <td>10/12/2018</td>
+                                    <td>15:00</td>
+                                    <td><input class="form-control input-sm" id="inputsm1" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <select class="form-control" id="loc2">
+                                            <option>Select One</option>
+                                            <option>Coffee</option>
+                                            <option>Study</option>
+                                            <option>Entertainment</option>
+                                        </select></td>
+                                    <td>18/12/2018</td>
+                                    <td>12:00</td>
+                                    <td><input class="form-control input-sm" id="inputsm2" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>
+                                        <select class="form-control" id="loc3">
+                                            <option>Select One</option>
+                                            <option>Coffee</option>
+                                            <option>Study</option>
+                                            <option>Entertainment</option>
+                                        </select></td>
+                                    <td>28/12/2018</td>
+                                    <td>10:00</td>
+                                    <td><input class="form-control input-sm" id="inputsm3" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>
+                                        <select class="form-control" id="loc4">
+                                            <option>Select One</option>
+                                            <option>Coffee</option>
+                                            <option>Study</option>
+                                            <option>Entertainment</option>
+                                        </select></td>
+                                    <td>09/01/2018</td>
+                                    <td>22:00</td>
+                                    <td><input class="form-control input-sm" id="inputsm4" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>
+                                        <select class="form-control" id="loc5">
+                                            <option>Select One</option>
+                                            <option>Coffee</option>
+                                            <option>Study</option>
+                                            <option>Entertainment</option>
+                                        </select></td>
+                                    <td>12/01/2018</td>
+                                    <td>11:00</td>
+                                    <td><input class="form-control input-sm" id="inputsm5" type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                <div class="col-lg-3">
+                    <button type="button" class="btn btn-outline btn-primary btn-lg btn-block addTopicButton">Done</button>
+                </div>
+               </div>
+            </form>
+          </div>
+        </div>    
+      </div>
+    </div>
+</body>
+</html>
+

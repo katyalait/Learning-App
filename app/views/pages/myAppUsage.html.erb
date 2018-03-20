@@ -1,4 +1,15 @@
- <%= render @pages || "header" %>
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>My App Usage</title>
+<%= stylesheet_link_tag    'application', media: 'all'%>
+<%= javascript_include_tag 'application' %>
+<%= javascript_include_tag 'myOwn' %>
+<%= csrf_meta_tags %>
+</head>
 <%= render @pages || "top_nav" %>
 <%= render @pages || "side_nav" %>
 <%= render @pages || "end_side_nav" %> 

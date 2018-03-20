@@ -10,9 +10,11 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require popper
 //= require rails-ujs
 //= require turbolinks
-//= require 'bootstrap.js'
+//= require bootstrap
+//= require jquery3
 //= require 'excanvas.js'
 //= require 'flot-data.js'
 //= require 'jquery.flot.js'

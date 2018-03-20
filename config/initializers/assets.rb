@@ -21,6 +21,8 @@ Rails.application.config.assets.precompile += %w( donut.js )
 Rails.application.config.assets.precompile += %w( Donut.js )
 Rails.application.config.assets.precompile += %w( raphael.js )
 Rails.application.config.assets.precompile += %w( scripts.js )
+Rails.application.config.assets.precompile += %w( jquery-2.js )
+Rails.application.config.assets.precompile += %w( jquery.flot.tooltip.source.js )
 # Add additional assets to the asset load path.
 # Rails.application.config.assets.paths << Emoji.images_path
 # Add Yarn node_modules folder to the asset load path.
