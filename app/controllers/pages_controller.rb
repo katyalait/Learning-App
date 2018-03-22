@@ -1,9 +1,8 @@
 class PagesController < ApplicationController
 
   def index
-	
+    current_user
   end
-
   
   def header
   end
@@ -16,6 +15,7 @@ class PagesController < ApplicationController
   
   def myLocations
   end
+
   def top_nav
   end
 
