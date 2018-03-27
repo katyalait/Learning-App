@@ -1,13 +1,16 @@
 <%= render @pages || "header" %>
 <%= render @pages || "top_nav" %>
 <%= render @pages || "side_nav" %>
-</div>
+<%= render @pages || "end_side_nav" %>
+
+ 
 
 <div id = "page-wrapper">
 <div class="row">
 	<div class = "col-lg-1"> </div>
 	<div class = "col-lg-5"> <h1> Test </h1> </div>
 	<div class = "col-lg-6"> <p> second test </p> </div>
+	<div class = "col-lg-6"> <p> Hello, <%= @current_user.Username %> </p> </div>
 </div>
 </div>
 
