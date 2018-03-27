@@ -21,4 +21,7 @@ class PagesController < ApplicationController
 
   def side_nav
   end
+
+  def singleAppusage
+  end
 end

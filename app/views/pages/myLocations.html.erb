@@ -6,7 +6,7 @@
 
     <title>My Locations</title>
 <%= stylesheet_link_tag    'application', media: 'all'%>
-<%= javascript_include_tag 'application' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true%>
 <%= csrf_meta_tags %>
 <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyBq2SJer3ZCQsjjMu-xZejLTKZiViLVCPg&callback=initMap", async: Rails.env.production? %>
 </head>

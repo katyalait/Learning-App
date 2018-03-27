@@ -13,8 +13,6 @@
 	<%= javascript_include_tag 'application' %>
 	<%= javascript_include_tag 'flot-data' %>
        <%= javascript_include_tag 'bootstrap' %>
-<%= javascript_include_tag 'jquery' %>
-<%= javascript_include_tag 'jquery-2' %> 
 <%= javascript_include_tag 'jquery.flot' %>
 <%= javascript_include_tag 'jquery.flot.pie' %>
 <%= javascript_include_tag 'jquery.flot.resize' %> 
@@ -33,9 +31,6 @@
 </head>
 <%= render @pages || "top_nav" %>
 <%= render @pages || "side_nav" %>
-                    <li>
-                        <a href="addTopic"><i class="fa fa-pencil fa-fw"></i> Add Topic</a>
-                    </li>
 <%= render @pages || "end_side_nav" %>
   
   <div id="page-wrapper">

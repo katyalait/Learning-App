@@ -2129,3 +2129,3180 @@ Migrating to CreateUserTopics (20180320174448)
   [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('774867243321705450')[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
 >>>>>>> a0e836f29fa9a7ddc07aaf601107894756cdf05d
+Started GET "/pages/singleAppUsage" for 127.0.0.1 at 2018-03-20 18:21:26 +0000
+  
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
+  
+mysql2 (0.4.10) lib/mysql2/client.rb:89:in `connect'
+mysql2 (0.4.10) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.1.5) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.5) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages/singleAppUsage" for 127.0.0.1 at 2018-03-20 18:22:44 +0000
+  
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
+  
+mysql2 (0.4.10) lib/mysql2/client.rb:89:in `connect'
+mysql2 (0.4.10) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.1.5) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.5) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages/singleAppUsage" for 127.0.0.1 at 2018-03-20 18:22:56 +0000
+  
+ActiveRecord::NoDatabaseError (Unknown database 'fardemo_new'):
+  
+activerecord (5.1.5) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `rescue in mysql2_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/mysql2_adapter.rb:11:in `mysql2_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages/singleAppUsage" for 127.0.0.1 at 2018-03-20 18:23:17 +0000
+  
+ActiveRecord::NoDatabaseError (Unknown database 'fardemo_new'):
+  
+activerecord (5.1.5) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `rescue in mysql2_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/mysql2_adapter.rb:11:in `mysql2_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.5) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages/singleAppUsage" for 127.0.0.1 at 2018-03-20 18:23:52 +0000
+  [1m[35m (20.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.5) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.5) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('8805950764467094035', 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsageReports (20180320172502)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180320172502')[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDevices (20180320173103)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180320173103')[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateContexts (20180320173221)
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180320173221')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateApps (20180320173608)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180320173608')[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLearningGoals (20180320173810)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180320173810')[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLocationReports (20180320174003)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180320174003')[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTopics (20180320174207)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180320174207')[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20180320174344)
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180320174344')[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUserTopics (20180320174448)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180320174448')[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-03-20 18:24:41', '2018-03-20 18:24:41')[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('8805950764467094035')[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/pages/singleAppUsage" for 127.0.0.1 at 2018-03-20 18:25:11 +0000
+  [1m[35m (2.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/pages/singleAppUsage"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages/singleAppUsage" for 127.0.0.1 at 2018-03-20 18:26:28 +0000
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [GET] "/pages/singleAppUsage"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages/singleAppUsage" for 127.0.0.1 at 2018-03-20 18:45:53 +0000
+Processing by PagesController#singleAppUsage as HTML
+  Rendering pages/singleAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.9ms)
+  Rendered pages/_side_nav.html.erb (1.2ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/singleAppUsage.html.erb within layouts/application (830.1ms)
+Completed 200 OK in 838ms (Views: 836.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-20 18:45:59 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.8ms)
+  Rendered pages/_side_nav.html.erb (1.1ms)
+  Rendered pages/_end_side_nav.html.erb (0.6ms)
+  Rendered pages/myLearning.html.erb within layouts/application (250.8ms)
+Completed 200 OK in 258ms (Views: 256.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-20 18:46:40 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.8ms)
+  Rendered pages/_side_nav.html.erb (1.0ms)
+  Rendered pages/_end_side_nav.html.erb (1.0ms)
+  Rendered pages/myLearning.html.erb within layouts/application (191.2ms)
+Completed 200 OK in 199ms (Views: 195.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-20 18:48:12 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (145.1ms)
+Completed 200 OK in 149ms (Views: 147.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-03-21 17:25:23 +0000
+  [1m[35m (20.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/overview.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 19ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-03-21 17:25:29 +0000
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/overview.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-03-21 17:25:43 +0000
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/usersTable.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 17:26:02 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/userApps.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverciew" for 127.0.0.1 at 2018-03-21 17:26:08 +0000
+  
+AbstractController::ActionNotFound (The action 'topicsOverciew' could not be found for ResearcherController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 17:26:12 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/topicsOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 17:27:10 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/topicsOverview.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:13:40 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (12022.0ms)
+Completed 500 Internal Server Error in 12038ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial researcher/_sode_nav, application/_sode_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/katelait/Desktop/Learning-App/app/views"
+):
+    34: <%= csrf_meta_tags %>
+    35: 
+    36: <%= render @researcher || "top_nav" %>
+    37: <%= render @researcher || "sode_nav" %>
+    38: <div id="page-wrapper">
+    39:         <div class="row">
+    40:             <div class="col-lg-12">
+  
+app/views/researcher/topicsOverview.html.erb:37:in `_app_views_researcher_topics_verview_html_erb__261673897__616784218'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:14:04 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.9ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (240.7ms)
+Completed 200 OK in 261ms (Views: 257.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:15:43 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (229.0ms)
+Completed 200 OK in 237ms (Views: 233.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:16:45 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (5.1ms)
+  Rendered researcher/_side_nav.html.erb (1.2ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (282.9ms)
+Completed 200 OK in 297ms (Views: 293.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:17:19 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.2ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (233.3ms)
+Completed 200 OK in 249ms (Views: 240.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:17:50 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.1ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (286.4ms)
+Completed 200 OK in 306ms (Views: 300.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:18:14 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.1ms)
+  Rendered researcher/_side_nav.html.erb (0.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (287.5ms)
+Completed 200 OK in 319ms (Views: 310.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/'" for 127.0.0.1 at 2018-03-21 18:18:17 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/'"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/'" for 127.0.0.1 at 2018-03-21 18:18:23 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/'"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:18:53 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.4ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (260.6ms)
+Completed 200 OK in 280ms (Views: 271.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:18:56 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (2.2ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (364.9ms)
+Completed 200 OK in 370ms (Views: 368.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:18:57 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.0ms)
+  Rendered researcher/_side_nav.html.erb (1.4ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (246.2ms)
+Completed 200 OK in 262ms (Views: 258.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:19:24 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.8ms)
+  Rendered researcher/_side_nav.html.erb (0.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (193.6ms)
+Completed 200 OK in 206ms (Views: 202.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-21 18:19:43 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.3ms)
+  Rendered researcher/_side_nav.html.erb (1.9ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (247.6ms)
+Completed 200 OK in 256ms (Views: 253.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:19:33 +0000
+  [1m[35m (2.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/userApps.html.erb within layouts/application (822.9ms)
+Completed 200 OK in 841ms (Views: 828.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:19:41 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (3.4ms)
+  Rendered researcher/userApps.html.erb within layouts/application (256.0ms)
+Completed 200 OK in 260ms (Views: 259.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:19:43 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.1ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (204.3ms)
+Completed 200 OK in 208ms (Views: 206.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:19:44 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.1ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (162.5ms)
+Completed 200 OK in 171ms (Views: 167.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:19:46 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (1.6ms)
+  Rendered researcher/userApps.html.erb within layouts/application (195.1ms)
+Completed 200 OK in 199ms (Views: 198.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:21:08 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.8ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/userApps.html.erb within layouts/application (246.9ms)
+Completed 200 OK in 252ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:22:15 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/userApps.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/katelait/Desktop/Learning-App/app/views/researcher/userApps.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ript_include_tag 'jquery' async: Rails.env.production?);@out...
+...                          ^~~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/userApps.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+...pt_include_tag 'jquery-2' async: Rails.env.production?);@out...
+...                          ^~~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/userApps.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ude_tag 'jquery.flot.pie' async: Rails.env.production?);@out...
+...                          ^~~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/userApps.html.erb:29: syntax error, unexpected tIDENTIFIER, expecting ')'
+...tag 'jquery.flot.tooltip' async: Rails.env.production?);@out...
+...                          ^~~~~):
+  
+app/views/researcher/userApps.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/researcher/userApps.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/researcher/userApps.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/researcher/userApps.html.erb:29: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:22:39 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.4ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/userApps.html.erb within layouts/application (287.6ms)
+Completed 200 OK in 296ms (Views: 293.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:22:44 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.1ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/userApps.html.erb within layouts/application (124.3ms)
+Completed 200 OK in 127ms (Views: 126.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:22:46 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (1.2ms)
+  Rendered researcher/userApps.html.erb within layouts/application (189.2ms)
+Completed 200 OK in 193ms (Views: 191.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:22:46 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/userApps.html.erb within layouts/application (217.7ms)
+Completed 200 OK in 222ms (Views: 220.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:22:47 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (1.2ms)
+  Rendered researcher/userApps.html.erb within layouts/application (212.0ms)
+Completed 200 OK in 218ms (Views: 216.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:22:49 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/userApps.html.erb within layouts/application (203.9ms)
+Completed 200 OK in 207ms (Views: 206.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:23:34 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (1.6ms)
+  Rendered researcher/userApps.html.erb within layouts/application (175.9ms)
+Completed 200 OK in 189ms (Views: 184.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:23:57 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/userApps.html.erb within layouts/application (165.4ms)
+Completed 200 OK in 169ms (Views: 167.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:25:07 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.4ms)
+  Rendered researcher/_side_nav.html.erb (1.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (205.7ms)
+Completed 200 OK in 216ms (Views: 213.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 20:25:11 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (9.8ms)
+Completed 200 OK in 25ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:25:45 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (200.3ms)
+Completed 200 OK in 211ms (Views: 208.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 20:25:48 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:26:07 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.9ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/userApps.html.erb within layouts/application (237.4ms)
+Completed 200 OK in 245ms (Views: 241.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 20:26:11 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usageOverview" for 127.0.0.1 at 2018-03-21 20:26:18 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/usageOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-03-21 20:26:23 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:26:30 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/userApps.html.erb within layouts/application (123.8ms)
+Completed 200 OK in 127ms (Views: 125.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:26:59 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (3.7ms)
+  Rendered researcher/_side_nav.html.erb (1.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (273.4ms)
+Completed 200 OK in 283ms (Views: 280.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 20:27:03 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:27:22 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (240.5ms)
+Completed 200 OK in 245ms (Views: 243.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:27:24 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.4ms)
+  Rendered researcher/_side_nav.html.erb (1.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (239.7ms)
+Completed 200 OK in 243ms (Views: 242.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:27:25 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/userApps.html.erb within layouts/application (256.6ms)
+Completed 200 OK in 262ms (Views: 260.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:27:26 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (3.0ms)
+  Rendered researcher/_side_nav.html.erb (1.0ms)
+  Rendered researcher/userApps.html.erb within layouts/application (247.8ms)
+Completed 200 OK in 253ms (Views: 252.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:27:28 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/userApps.html.erb within layouts/application (208.2ms)
+Completed 200 OK in 213ms (Views: 211.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:27:51 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/userApps.html.erb within layouts/application (219.1ms)
+Completed 200 OK in 228ms (Views: 225.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:27:55 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/userApps.html.erb within layouts/application (191.9ms)
+Completed 200 OK in 195ms (Views: 194.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:28:04 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.9ms)
+  Rendered researcher/_side_nav.html.erb (12.8ms)
+  Rendered researcher/userApps.html.erb within layouts/application (220.5ms)
+Completed 200 OK in 242ms (Views: 239.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-21 20:28:07 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.7ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/userApps.html.erb within layouts/application (151.4ms)
+Completed 200 OK in 154ms (Views: 153.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userTable" for 127.0.0.1 at 2018-03-21 20:28:10 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/userTable"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:38:44 +0000
+  [1m[35m (8.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.8ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (2491.8ms)
+Completed 200 OK in 2541ms (Views: 2524.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:38:57 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.1ms)
+  Rendered researcher/_side_nav.html.erb (1.9ms)
+  Rendered researcher/userApps.html.erb within layouts/application (307.4ms)
+Completed 200 OK in 315ms (Views: 312.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:38:59 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (1.9ms)
+  Rendered researcher/userApps.html.erb within layouts/application (212.2ms)
+Completed 200 OK in 218ms (Views: 215.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usageOverview" for 127.0.0.1 at 2018-03-22 12:39:10 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/usageOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-03-22 12:39:13 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:39:16 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.3ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (198.3ms)
+Completed 200 OK in 203ms (Views: 201.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userTable" for 127.0.0.1 at 2018-03-22 12:39:19 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/userTable"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:40:52 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.2ms)
+  Rendered researcher/_side_nav.html.erb (1.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (279.7ms)
+Completed 200 OK in 291ms (Views: 287.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-03-22 12:40:56 +0000
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/usersTable.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:41:06 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.1ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (232.8ms)
+Completed 200 OK in 250ms (Views: 248.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:41:09 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.9ms)
+  Rendered researcher/_side_nav.html.erb (1.1ms)
+  Rendered researcher/userApps.html.erb within layouts/application (208.8ms)
+Completed 200 OK in 217ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-03-22 12:41:14 +0000
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/usersTable.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:41:17 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.6ms)
+  Rendered researcher/_side_nav.html.erb (1.0ms)
+  Rendered researcher/userApps.html.erb within layouts/application (233.6ms)
+Completed 200 OK in 241ms (Views: 240.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:44:27 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (2.8ms)
+  Rendered researcher/userApps.html.erb within layouts/application (282.3ms)
+Completed 200 OK in 292ms (Views: 288.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:44:31 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.0ms)
+  Rendered researcher/_side_nav.html.erb (1.1ms)
+  Rendered researcher/userApps.html.erb within layouts/application (171.0ms)
+Completed 200 OK in 179ms (Views: 177.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:44:33 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.6ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (208.8ms)
+Completed 200 OK in 212ms (Views: 211.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:46:52 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (1.2ms)
+  Rendered researcher/userApps.html.erb within layouts/application (259.6ms)
+Completed 200 OK in 272ms (Views: 266.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 12:58:52 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.8ms)
+  Rendered researcher/_side_nav.html.erb (3.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (296.0ms)
+Completed 200 OK in 305ms (Views: 302.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 12:59:09 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.1ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (214.7ms)
+Completed 200 OK in 218ms (Views: 216.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 12:59:18 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.0ms)
+  Rendered researcher/_side_nav.html.erb (1.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (202.2ms)
+Completed 200 OK in 208ms (Views: 206.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 12:59:22 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.1ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (255.5ms)
+Completed 200 OK in 259ms (Views: 257.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 12:59:25 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.7ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (275.5ms)
+Completed 200 OK in 281ms (Views: 279.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 12:59:26 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.3ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (252.1ms)
+Completed 200 OK in 256ms (Views: 254.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:00:20 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.2ms)
+  Rendered researcher/_side_nav.html.erb (1.0ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (270.5ms)
+Completed 200 OK in 281ms (Views: 278.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:00:46 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.1ms)
+  Rendered researcher/_side_nav.html.erb (3.4ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (284.4ms)
+Completed 200 OK in 293ms (Views: 290.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:01:07 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (1.1ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (209.6ms)
+Completed 200 OK in 217ms (Views: 214.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:01:10 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.9ms)
+  Rendered researcher/_side_nav.html.erb (2.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (261.5ms)
+Completed 200 OK in 271ms (Views: 269.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:01:32 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (3.6ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (247.5ms)
+Completed 200 OK in 256ms (Views: 253.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:02:09 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (1.0ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (180.9ms)
+Completed 200 OK in 185ms (Views: 183.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-03-22 13:02:12 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:03:26 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (1.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (217.2ms)
+Completed 200 OK in 221ms (Views: 220.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-03-22 13:03:28 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-03-22 13:03:45 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:03:49 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.4ms)
+  Rendered researcher/_side_nav.html.erb (1.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (240.4ms)
+Completed 200 OK in 252ms (Views: 248.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:04:30 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (1.3ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (226.4ms)
+Completed 200 OK in 235ms (Views: 232.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:06:45 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.7ms)
+  Rendered researcher/_side_nav.html.erb (1.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (1182.9ms)
+Completed 200 OK in 1192ms (Views: 1188.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:07:42 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.6ms)
+  Rendered researcher/_side_nav.html.erb (1.3ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (7698.0ms)
+Completed 200 OK in 7722ms (Views: 7710.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:07:59 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (1.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (181.9ms)
+Completed 200 OK in 203ms (Views: 201.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:08:16 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.8ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (183.6ms)
+Completed 200 OK in 196ms (Views: 191.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:08:33 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (3.7ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (196.0ms)
+Completed 200 OK in 204ms (Views: 201.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:08:58 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (3.3ms)
+  Rendered researcher/_side_nav.html.erb (2.0ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (327.3ms)
+Completed 200 OK in 338ms (Views: 335.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:09:17 +0000
+  [1m[35m (3.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.7ms)
+  Rendered researcher/_side_nav.html.erb (1.2ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (2071.0ms)
+Completed 200 OK in 2103ms (Views: 2084.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:11:41 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (196.1ms)
+Completed 200 OK in 207ms (Views: 203.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:11:48 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.0ms)
+  Rendered researcher/_side_nav.html.erb (1.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (194.8ms)
+Completed 200 OK in 203ms (Views: 201.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:11:50 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.3ms)
+  Rendered researcher/_side_nav.html.erb (1.2ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (256.9ms)
+Completed 200 OK in 267ms (Views: 265.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:11:51 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (3.6ms)
+  Rendered researcher/_side_nav.html.erb (1.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (241.6ms)
+Completed 200 OK in 247ms (Views: 245.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:11:53 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.8ms)
+  Rendered researcher/_side_nav.html.erb (2.3ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (271.5ms)
+Completed 200 OK in 276ms (Views: 274.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:23:37 +0000
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (49303.1ms)
+Completed 200 OK in 49347ms (Views: 49323.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:25:07 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.9ms)
+  Rendered researcher/_side_nav.html.erb (1.3ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (618.9ms)
+Completed 200 OK in 648ms (Views: 636.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:26:33 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.1ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (3683.6ms)
+Completed 200 OK in 3690ms (Views: 3687.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:29:00 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/topicsOverview.html.erb within layouts/application (248.8ms)
+Completed 500 Internal Server Error in 259ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /home/katelait/Desktop/Learning-App/app/assets/config
+  /home/katelait/Desktop/Learning-App/app/assets/images
+  /home/katelait/Desktop/Learning-App/app/assets/javascripts
+  /home/katelait/Desktop/Learning-App/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/images
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/fonts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actioncable-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionview-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/katelait/Desktop/Learning-App/node_modules
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/popper_js-1.12.9/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/javascripts):
+    12:     <title>Summary Statistics</title>
+    13: 
+    14: <%= stylesheet_link_tag    'application', media: 'all'%>
+    15: <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>  
+    16:  
+    17:  <%= javascript_include_tag 'bootstrap' %>
+    18:  <%= javascript_include_tag 'jquery' %>  
+  
+app/assets/javascripts/application.js:25
+app/views/researcher/topicsOverview.html.erb:15:in `_app_views_researcher_topics_verview_html_erb__492443389_55365730'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:29:44 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.2ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (1429.7ms)
+Completed 200 OK in 1441ms (Views: 1434.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:33:04 +0000
+  [1m[35m (4.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.8ms)
+  Rendered researcher/_side_nav.html.erb (0.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (56723.0ms)
+Completed 200 OK in 56764ms (Views: 56740.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:34:38 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (1.1ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (748.6ms)
+Completed 200 OK in 770ms (Views: 765.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:36:13 +0000
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/topicsOverview.html.erb within layouts/application (835.1ms)
+Completed 500 Internal Server Error in 866ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    11: 
+    12:     <title>Summary Statistics</title>
+    13: 
+    14: <%= stylesheet_link_tag    'application', media: 'all'%>
+    15: <%= javascript_include_tag 'application'%>  
+    16:  
+    17:  <%= javascript_include_tag 'bootstrap' %>
+  
+app/assets/javascripts/application.js:24
+app/views/researcher/topicsOverview.html.erb:14:in `_app_views_researcher_topics_verview_html_erb___218237894_16470810'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:36:37 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.4ms)
+  Rendered researcher/_side_nav.html.erb (0.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (3212.2ms)
+Completed 200 OK in 3225ms (Views: 3221.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:37:25 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.5ms)
+  Rendered pages/_side_nav.html.erb (1.0ms)
+  Rendered pages/_end_side_nav.html.erb (0.5ms)
+  Rendered pages/myLearning.html.erb within layouts/application (777.6ms)
+Completed 200 OK in 791ms (Views: 785.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:37:37 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (454.5ms)
+Completed 200 OK in 466ms (Views: 463.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-22 13:37:42 +0000
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (462.0ms)
+Completed 200 OK in 467ms (Views: 465.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:37:47 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (446.9ms)
+Completed 200 OK in 454ms (Views: 452.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:37:57 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (309.8ms)
+Completed 200 OK in 314ms (Views: 312.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:40:06 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.0ms)
+  Rendered pages/_side_nav.html.erb (0.7ms)
+  Rendered pages/_end_side_nav.html.erb (1.4ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (741.6ms)
+Completed 200 OK in 749ms (Views: 747.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:40:45 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.9ms)
+  Rendered pages/_side_nav.html.erb (1.0ms)
+  Rendered pages/_end_side_nav.html.erb (1.7ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (793.3ms)
+Completed 200 OK in 809ms (Views: 804.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:41:03 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.8ms)
+  Rendered pages/_side_nav.html.erb (0.8ms)
+  Rendered pages/_end_side_nav.html.erb (0.9ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (732.4ms)
+Completed 200 OK in 745ms (Views: 741.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:41:17 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.9ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/_end_side_nav.html.erb (0.5ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (704.7ms)
+Completed 200 OK in 716ms (Views: 713.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:41:33 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (1.0ms)
+  Rendered pages/_end_side_nav.html.erb (1.2ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (868.8ms)
+Completed 200 OK in 881ms (Views: 876.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:41:53 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.8ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (1.2ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (654.5ms)
+Completed 200 OK in 662ms (Views: 660.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:42:15 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.3ms)
+  Rendered pages/_side_nav.html.erb (0.7ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (691.1ms)
+Completed 200 OK in 716ms (Views: 713.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:42:29 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.8ms)
+  Rendered pages/_side_nav.html.erb (1.0ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (640.0ms)
+Completed 200 OK in 647ms (Views: 645.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:42:36 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLearning.html.erb within layouts/application (488.6ms)
+Completed 200 OK in 493ms (Views: 491.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-22 13:42:38 +0000
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (449.9ms)
+Completed 200 OK in 454ms (Views: 452.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:42:41 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.6ms)
+  Rendered pages/myLearning.html.erb within layouts/application (481.3ms)
+Completed 200 OK in 492ms (Views: 490.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:42:46 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/_end_side_nav.html.erb (1.1ms)
+  Rendered pages/myLearning.html.erb within layouts/application (837.6ms)
+Completed 200 OK in 852ms (Views: 849.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-22 13:42:52 +0000
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.8ms)
+  Rendered pages/_side_nav.html.erb (1.0ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (526.3ms)
+Completed 200 OK in 530ms (Views: 529.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:42:53 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.5ms)
+  Rendered pages/_side_nav.html.erb (1.5ms)
+  Rendered pages/_end_side_nav.html.erb (1.0ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (421.2ms)
+Completed 200 OK in 428ms (Views: 426.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:42:56 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.6ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/_end_side_nav.html.erb (0.9ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (745.8ms)
+Completed 200 OK in 764ms (Views: 759.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 13:43:27 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.4ms)
+  Rendered pages/_side_nav.html.erb (1.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.6ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (1005.0ms)
+Completed 200 OK in 1023ms (Views: 1018.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:43:36 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLearning.html.erb within layouts/application (463.1ms)
+Completed 200 OK in 469ms (Views: 466.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:43:41 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (2.3ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/_end_side_nav.html.erb (0.5ms)
+  Rendered pages/myLearning.html.erb within layouts/application (712.8ms)
+Completed 200 OK in 743ms (Views: 738.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:43:54 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.4ms)
+  Rendered researcher/_side_nav.html.erb (1.0ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (800.8ms)
+Completed 200 OK in 810ms (Views: 807.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-03-22 13:44:18 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:44:22 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (411.6ms)
+Completed 200 OK in 417ms (Views: 415.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:44:24 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (442.5ms)
+Completed 200 OK in 448ms (Views: 446.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:44:25 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (477.2ms)
+Completed 200 OK in 482ms (Views: 480.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:44:27 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.9ms)
+  Rendered researcher/_side_nav.html.erb (0.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (532.8ms)
+Completed 200 OK in 537ms (Views: 535.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-03-22 13:44:30 +0000
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/usersTable.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:44:33 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (1.1ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (503.5ms)
+Completed 200 OK in 513ms (Views: 511.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 13:44:34 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.6ms)
+  Rendered researcher/userApps.html.erb within layouts/application (455.0ms)
+Completed 200 OK in 461ms (Views: 459.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 13:44:37 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.9ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/userApps.html.erb within layouts/application (472.5ms)
+Completed 200 OK in 477ms (Views: 475.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:44:39 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (533.1ms)
+Completed 200 OK in 537ms (Views: 535.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-03-22 13:44:40 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:45:39 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.2ms)
+  Rendered researcher/_side_nav.html.erb (1.8ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (635.4ms)
+Completed 200 OK in 643ms (Views: 641.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:46:23 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.6ms)
+  Rendered researcher/_side_nav.html.erb (1.3ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (6883.9ms)
+Completed 200 OK in 6891ms (Views: 6889.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-22 13:46:49 +0000
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (448.9ms)
+Completed 200 OK in 462ms (Views: 456.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:46:52 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (572.9ms)
+Completed 200 OK in 578ms (Views: 576.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:46:58 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.7ms)
+  Rendered pages/_side_nav.html.erb (1.4ms)
+  Rendered pages/_end_side_nav.html.erb (4.9ms)
+  Rendered pages/myLearning.html.erb within layouts/application (923.6ms)
+Completed 200 OK in 939ms (Views: 936.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:47:33 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.7ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/_end_side_nav.html.erb (0.6ms)
+  Rendered pages/myLearning.html.erb within layouts/application (1466.2ms)
+Completed 200 OK in 1487ms (Views: 1484.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:47:39 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.9ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (854.1ms)
+Completed 200 OK in 866ms (Views: 862.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:48:26 +0000
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (2.1ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (7998.6ms)
+Completed 200 OK in 8021ms (Views: 8007.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:49:35 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.7ms)
+  Rendered pages/_side_nav.html.erb (0.8ms)
+  Rendered pages/_end_side_nav.html.erb (0.5ms)
+  Rendered pages/myLearning.html.erb within layouts/application (819.9ms)
+Completed 200 OK in 838ms (Views: 832.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:49:55 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (1.2ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLearning.html.erb within layouts/application (700.2ms)
+Completed 200 OK in 705ms (Views: 703.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:50:15 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/_end_side_nav.html.erb (1.9ms)
+  Rendered pages/myLearning.html.erb within layouts/application (703.0ms)
+Completed 200 OK in 713ms (Views: 711.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 13:50:52 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLearning.html.erb within layouts/application (777.8ms)
+Completed 200 OK in 801ms (Views: 790.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:51:00 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (4.0ms)
+  Rendered researcher/_side_nav.html.erb (2.2ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (832.4ms)
+Completed 200 OK in 868ms (Views: 854.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:51:34 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.0ms)
+  Rendered researcher/_side_nav.html.erb (1.3ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (792.2ms)
+Completed 200 OK in 797ms (Views: 795.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:53:01 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (904.0ms)
+Completed 200 OK in 913ms (Views: 910.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:54:00 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.0ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (747.8ms)
+Completed 200 OK in 770ms (Views: 767.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:54:39 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (1.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (693.9ms)
+Completed 200 OK in 715ms (Views: 703.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:55:22 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.0ms)
+  Rendered researcher/_side_nav.html.erb (1.0ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (796.9ms)
+Completed 200 OK in 813ms (Views: 809.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:56:17 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (470.2ms)
+Completed 200 OK in 474ms (Views: 472.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:56:20 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (1.2ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (562.5ms)
+Completed 200 OK in 575ms (Views: 573.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:56:22 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (0.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (508.7ms)
+Completed 200 OK in 517ms (Views: 514.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:56:24 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (507.6ms)
+Completed 200 OK in 512ms (Views: 510.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 13:56:28 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.9ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (722.5ms)
+Completed 200 OK in 726ms (Views: 724.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:15:11 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.7ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (5589.1ms)
+Completed 200 OK in 5626ms (Views: 5608.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:19:06 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (2490.5ms)
+Completed 200 OK in 2499ms (Views: 2495.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:19:44 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (1.7ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (724.2ms)
+Completed 200 OK in 742ms (Views: 729.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:23:59 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/topicsOverview.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:15: syntax error, unexpected ':', expecting ')'
+...’, ‘data-turbolinks-track’: ‘reload’), false );@outp...
+...                                ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:15: syntax error, unexpected ')', expecting keyword_end
+...rack’: ‘reload’), false );@output_buffer.safe_append='...
+...                              ^):
+  
+app/views/researcher/topicsOverview.html.erb:15: syntax error, unexpected ':', expecting ')'
+app/views/researcher/topicsOverview.html.erb:15: syntax error, unexpected ')', expecting keyword_end
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:24:48 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:25:06 +0000
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:25:37 +0000
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/topicsOverview.html.erb within layouts/application (18.7ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+...vascript_include_tag 'bootstrap' );@output_buffer.safe_appen...
+...                      ^~~~~~~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nd=( javascript_include_tag 'sb-admin-2' );@output_buffer.sa...
+...                             ^~
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:17: syntax error, unexpected tSTRING_BEG, expecting ')'
+...script_include_tag 'sb-admin-2' );@output_buffer.safe_append...
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...vascript_include_tag 'metisMenu' );@output_buffer.safe_appen...
+...                      ^~~~~~~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+...javascript_include_tag 'raphael' );@output_buffer.safe_appen...
+...                        ^~~~~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+... javascript_include_tag 'morris' );@output_buffer.safe_appen...
+...                         ^~~~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:21: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+...utput_buffer.safe_append='  -->
+...                               ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:26: unknown regexp option - l
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:27: syntax error, unexpected '<'
+ 		</div>
+ 		^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:28: unknown regexp options - dv
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:29: syntax error, unexpected '<'
+        </nav>
+        ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:30: unknown regexp options - dv
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:31: syntax error, unexpected '<'
+<div id="page-wrapper">
+^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:32: syntax error, unexpected '<'
+        <div class="row">
+        ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:33: syntax error, unexpected '<'
+            <div class="col-lg-12">
+            ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:34: syntax error, unexpected '<'
+                <h1 class="page-header">Learni...
+                ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:34: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...s="page-header">Learning Topics</h1>
+...                         ^~~~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:35: unknown regexp options - dv
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:36: syntax error, unexpected '<'
+        </div>
+        ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:44: syntax error, unexpected '<'
+...t" type="button">Add Topic</i></button>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:45: unknown regexp options - pa
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:46: syntax error, unexpected '<'
+                    </div>
+                    ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:47: unknown regexp options - fr
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:48: syntax error, unexpected '<'
+			</div>
+			^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:49: unknown regexp options - dv
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:50: syntax error, unexpected '<'
+		<!-- table -->
+		^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:50: syntax error, unexpected unary-, expecting keyword_do or '{' or '('
+		<!-- table -->
+		           ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:52: syntax error, unexpected '<'
+            <div class="col-lg-6">
+            ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:53: syntax error, unexpected '<'
+                <div class="panel panel-defaul...
+                ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:54: syntax error, unexpected '<'
+                    <div class="panel-heading">Top...
+                    ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:54: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...ass="panel-heading">Topics List</div>
+...                           ^~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:60: unknown regexp options - th
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:61: syntax error, unexpected '<'
+...                              <th>Topic</th>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:62: unknown regexp options - th
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:63: syntax error, unexpected '<'
+...                              </tr>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:64: unknown regexp options - thad
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:65: syntax error, unexpected '<'
+...                              <tbody>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:68: unknown regexp options - td
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:69: syntax error, unexpected '<'
+											<td>56</td>
+											^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:70: unknown regexp options - tr
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:71: syntax error, unexpected '<'
+...                              <tr>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:73: unknown regexp options - td
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:74: syntax error, unexpected '<'
+...                              <td>56</td>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:75: unknown regexp options - tr
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:76: syntax error, unexpected '<'
+...                              <tr>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:78: unknown regexp options - td
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:79: syntax error, unexpected '<'
+...                              <td>65</td>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:80: unknown regexp options - tr
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:81: syntax error, unexpected '<'
+										<tr>
+										^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:83: unknown regexp options - td
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:84: syntax error, unexpected '<'
+...                              <td>60</td>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:85: unknown regexp options - tr
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:86: syntax error, unexpected '<'
+										<tr>
+										^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:88: unknown regexp options - td
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:89: syntax error, unexpected '<'
+...                              <td>100</td>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:90: unknown regexp options - tr
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:91: syntax error, unexpected '<'
+...                              </tbody>
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:92: unknown regexp options - tabl
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:93: syntax error, unexpected '<'
+                            </div>
+                            ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:94: unknown regexp options - dv
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:95: syntax error, unexpected '<'
+                    </div>
+                    ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:96: unknown regexp options - dv
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:97: syntax error, unexpected '<'
+            </div>
+            ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:98: unknown regexp options - dv
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:99: syntax error, unexpected '<'
+</body>
+^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:101: unknown regexp options - htl
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:107: unterminated string meets end of file
+          end
+             ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:107: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/researcher/topicsOverview.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/researcher/topicsOverview.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/researcher/topicsOverview.html.erb:17: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/researcher/topicsOverview.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/researcher/topicsOverview.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/researcher/topicsOverview.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/researcher/topicsOverview.html.erb:21: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/researcher/topicsOverview.html.erb:26: unknown regexp option - l
+app/views/researcher/topicsOverview.html.erb:27: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:28: unknown regexp options - dv
+app/views/researcher/topicsOverview.html.erb:29: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:30: unknown regexp options - dv
+app/views/researcher/topicsOverview.html.erb:31: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:32: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:33: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:34: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:34: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/researcher/topicsOverview.html.erb:35: unknown regexp options - dv
+app/views/researcher/topicsOverview.html.erb:36: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:44: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:45: unknown regexp options - pa
+app/views/researcher/topicsOverview.html.erb:46: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:47: unknown regexp options - fr
+app/views/researcher/topicsOverview.html.erb:48: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:49: unknown regexp options - dv
+app/views/researcher/topicsOverview.html.erb:50: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:50: syntax error, unexpected unary-, expecting keyword_do or '{' or '('
+app/views/researcher/topicsOverview.html.erb:52: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:53: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:54: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:54: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/researcher/topicsOverview.html.erb:60: unknown regexp options - th
+app/views/researcher/topicsOverview.html.erb:61: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:62: unknown regexp options - th
+app/views/researcher/topicsOverview.html.erb:63: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:64: unknown regexp options - thad
+app/views/researcher/topicsOverview.html.erb:65: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:68: unknown regexp options - td
+app/views/researcher/topicsOverview.html.erb:69: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:70: unknown regexp options - tr
+app/views/researcher/topicsOverview.html.erb:71: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:73: unknown regexp options - td
+app/views/researcher/topicsOverview.html.erb:74: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:75: unknown regexp options - tr
+app/views/researcher/topicsOverview.html.erb:76: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:78: unknown regexp options - td
+app/views/researcher/topicsOverview.html.erb:79: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:80: unknown regexp options - tr
+app/views/researcher/topicsOverview.html.erb:81: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:83: unknown regexp options - td
+app/views/researcher/topicsOverview.html.erb:84: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:85: unknown regexp options - tr
+app/views/researcher/topicsOverview.html.erb:86: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:88: unknown regexp options - td
+app/views/researcher/topicsOverview.html.erb:89: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:90: unknown regexp options - tr
+app/views/researcher/topicsOverview.html.erb:91: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:92: unknown regexp options - tabl
+app/views/researcher/topicsOverview.html.erb:93: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:94: unknown regexp options - dv
+app/views/researcher/topicsOverview.html.erb:95: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:96: unknown regexp options - dv
+app/views/researcher/topicsOverview.html.erb:97: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:98: unknown regexp options - dv
+app/views/researcher/topicsOverview.html.erb:99: syntax error, unexpected '<'
+app/views/researcher/topicsOverview.html.erb:101: unknown regexp options - htl
+app/views/researcher/topicsOverview.html.erb:107: unterminated string meets end of file
+app/views/researcher/topicsOverview.html.erb:107: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:26:58 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/topicsOverview.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:15: syntax error, unexpected ')', expecting =>
+...ink-track': 'reload', 'false' );@output_buffer.safe_append='...
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:105: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:107: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/researcher/topicsOverview.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/researcher/topicsOverview.html.erb:105: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/researcher/topicsOverview.html.erb:107: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:27:17 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/topicsOverview.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:15: syntax error, unexpected ')', expecting =>
+...olink-track': 'reload', false );@output_buffer.safe_append='...
+...                              ^
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:105: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/katelait/Desktop/Learning-App/app/views/researcher/topicsOverview.html.erb:107: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/researcher/topicsOverview.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/researcher/topicsOverview.html.erb:105: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/researcher/topicsOverview.html.erb:107: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:28:16 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (2288.1ms)
+Completed 200 OK in 2298ms (Views: 2296.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-03-22 14:28:29 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:29:23 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.3ms)
+  Rendered researcher/_side_nav.html.erb (1.3ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (708.2ms)
+Completed 200 OK in 724ms (Views: 715.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 14:29:30 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.2ms)
+  Rendered researcher/userApps.html.erb within layouts/application (487.4ms)
+Completed 200 OK in 490ms (Views: 489.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 14:29:33 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (362.5ms)
+Completed 200 OK in 365ms (Views: 364.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 14:29:35 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.2ms)
+  Rendered researcher/_side_nav.html.erb (1.4ms)
+  Rendered researcher/userApps.html.erb within layouts/application (678.8ms)
+Completed 200 OK in 687ms (Views: 683.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 14:32:01 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.1ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/userApps.html.erb within layouts/application (1315.3ms)
+Completed 200 OK in 1350ms (Views: 1337.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:32:15 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.9ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (584.8ms)
+Completed 200 OK in 588ms (Views: 587.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:32:18 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.6ms)
+  Rendered researcher/_side_nav.html.erb (1.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (801.4ms)
+Completed 200 OK in 816ms (Views: 813.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-03-22 14:34:55 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-03-22 14:35:01 +0000
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/usersTable.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:35:03 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.1ms)
+  Rendered researcher/_side_nav.html.erb (4.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (687.5ms)
+Completed 200 OK in 691ms (Views: 689.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 14:35:05 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (419.7ms)
+Completed 200 OK in 423ms (Views: 421.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 14:35:09 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (560.4ms)
+Completed 200 OK in 564ms (Views: 562.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:35:17 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (561.4ms)
+Completed 200 OK in 567ms (Views: 565.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-03-22 14:35:22 +0000
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (375.6ms)
+Completed 200 OK in 378ms (Views: 377.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 14:35:28 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.2ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (410.1ms)
+Completed 200 OK in 413ms (Views: 412.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-22 14:37:30 +0000
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/_end_side_nav.html.erb (0.2ms)
+  Rendered pages/myLocations.html.erb within layouts/application (458.4ms)
+Completed 200 OK in 462ms (Views: 461.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 14:37:33 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/myLearning.html.erb within layouts/application (436.1ms)
+Completed 500 Internal Server Error in 451ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "jquery-2.js" is not present in the asset pipeline.):
+    14: 	<%= javascript_include_tag 'flot-data' %>
+    15:        <%= javascript_include_tag 'bootstrap' %>
+    16: <%= javascript_include_tag 'jquery' %>
+    17: <%= javascript_include_tag 'jquery-2' %> 
+    18: <%= javascript_include_tag 'jquery.flot' %>
+    19: <%= javascript_include_tag 'jquery.flot.pie' %>
+    20: <%= javascript_include_tag 'jquery.flot.resize' %> 
+  
+app/views/pages/myLearning.html.erb:17:in `_app_views_pages_my_earning_html_erb__981788784__642964178'
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 14:38:16 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.2ms)
+  Rendered pages/_side_nav.html.erb (1.5ms)
+  Rendered pages/_end_side_nav.html.erb (0.7ms)
+  Rendered pages/myLearning.html.erb within layouts/application (846.0ms)
+Completed 200 OK in 879ms (Views: 871.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-22 14:38:22 +0000
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (1.2ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myLocations.html.erb within layouts/application (512.9ms)
+Completed 200 OK in 516ms (Views: 515.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 14:38:24 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (475.6ms)
+Completed 200 OK in 479ms (Views: 477.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 14:38:29 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (2.5ms)
+  Rendered pages/_side_nav.html.erb (1.2ms)
+  Rendered pages/_end_side_nav.html.erb (0.9ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (754.3ms)
+Completed 200 OK in 772ms (Views: 769.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 14:39:39 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.6ms)
+  Rendered pages/_side_nav.html.erb (1.2ms)
+  Rendered pages/_end_side_nav.html.erb (0.5ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (712.3ms)
+Completed 200 OK in 726ms (Views: 720.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-22 14:40:05 +0000
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.9ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/_end_side_nav.html.erb (0.9ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (881.8ms)
+Completed 200 OK in 888ms (Views: 886.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-22 15:08:32 +0000
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.2ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/_end_side_nav.html.erb (1.0ms)
+  Rendered pages/myLearning.html.erb within layouts/application (798.7ms)
+Completed 200 OK in 817ms (Views: 807.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 15:14:31 +0000
+  [1m[35m (4.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/topicsOverview.html.erb within layouts/application (812.3ms)
+Completed 500 Internal Server Error in 855ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /home/katelait/Desktop/Learning-App/app/assets/config
+  /home/katelait/Desktop/Learning-App/app/assets/images
+  /home/katelait/Desktop/Learning-App/app/assets/javascripts
+  /home/katelait/Desktop/Learning-App/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/images
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/fonts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actioncable-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionview-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/katelait/Desktop/Learning-App/node_modules
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/popper_js-1.12.9/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/fonts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/images
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/stylesheets):
+    11: 
+    12:     <title>Summary Statistics</title>
+    13: 
+    14: <%= stylesheet_link_tag    'application', media: 'all'%>
+    15: <%= javascript_include_tag 'application', 'data-turbolink-track'=>true %>  
+    16:   <%= javascript_include_tag 'bootstrap' %>
+    17: <%= javascript_include_tag 'sb-admin-2' %> 
+  
+app/assets/stylesheets/application.css.sass:23
+app/views/researcher/topicsOverview.html.erb:14:in `_app_views_researcher_topics_verview_html_erb__654090574_19170620'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 15:24:07 +0000
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/topicsOverview.html.erb within layouts/application (672.7ms)
+Completed 500 Internal Server Error in 715ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /home/katelait/Desktop/Learning-App/app/assets/config
+  /home/katelait/Desktop/Learning-App/app/assets/images
+  /home/katelait/Desktop/Learning-App/app/assets/javascripts
+  /home/katelait/Desktop/Learning-App/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/images
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/fonts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actioncable-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionview-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/katelait/Desktop/Learning-App/node_modules
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/popper_js-1.12.9/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/stylesheets:
+  app/assets/stylesheets/application.css.sass:23:in `'
+  app/views/researcher/topicsOverview.html.erb:14:in `_app_views_researcher_topics_verview_html_erb__994177842_25669620'
+
+Started POST "/__better_errors/02d9e41d87e05843/variables" for 127.0.0.1 at 2018-03-22 15:24:08 +0000
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-03-22 15:25:13 +0000
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/topicsOverview.html.erb within layouts/application (155.1ms)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'bootstrap-sprockets' with type 'text/css'
+Checked in these paths: 
+  /home/katelait/Desktop/Learning-App/app/assets/config
+  /home/katelait/Desktop/Learning-App/app/assets/images
+  /home/katelait/Desktop/Learning-App/app/assets/javascripts
+  /home/katelait/Desktop/Learning-App/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/images
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/fonts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actioncable-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionview-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/katelait/Desktop/Learning-App/node_modules
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/popper_js-1.12.9/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/javascripts:
+  app/assets/stylesheets/application.css.sass:16:in `'
+  app/views/researcher/topicsOverview.html.erb:14:in `_app_views_researcher_topics_verview_html_erb__994177842_37240080'
+
+Started POST "/__better_errors/faaa11a4054ea9be/variables" for 127.0.0.1 at 2018-03-22 15:25:14 +0000
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-27 11:14:38 +0100
+  [1m[35m (40.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (21.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/myLearning.html.erb within layouts/application (685.8ms)
+Completed 500 Internal Server Error in 726ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'bootstrap-sprockets' with type 'text/css'
+Checked in these paths: 
+  /home/katelait/Desktop/Learning-App/app/assets/config
+  /home/katelait/Desktop/Learning-App/app/assets/images
+  /home/katelait/Desktop/Learning-App/app/assets/javascripts
+  /home/katelait/Desktop/Learning-App/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/fonts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/images
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actioncable-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionview-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/katelait/Desktop/Learning-App/node_modules
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/popper_js-1.12.9/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/javascripts:
+  app/assets/stylesheets/application.css.sass:16:in `'
+  app/views/pages/myLearning.html.erb:12:in `_app_views_pages_my_earning_html_erb__70359129_27557730'
+
+Started POST "/__better_errors/605622d823ea9b90/variables" for 127.0.0.1 at 2018-03-27 11:14:40 +0100
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-27 11:14:45 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/myLocations.html.erb within layouts/application (18.4ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'bootstrap-sprockets' with type 'text/css'
+Checked in these paths: 
+  /home/katelait/Desktop/Learning-App/app/assets/config
+  /home/katelait/Desktop/Learning-App/app/assets/images
+  /home/katelait/Desktop/Learning-App/app/assets/javascripts
+  /home/katelait/Desktop/Learning-App/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/fonts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/font-awesome-rails-4.7.0.3/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/images
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-ui-rails-5.0.5/app/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actioncable-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionview-5.1.5/lib/assets/compiled
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/katelait/Desktop/Learning-App/node_modules
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/popper_js-1.12.9/assets/javascripts
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/stylesheets
+  /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bootstrap-4.0.0/assets/javascripts:
+  app/assets/stylesheets/application.css.sass:16:in `'
+  app/views/pages/myLocations.html.erb:8:in `_app_views_pages_my_ocations_html_erb__265837165__618612358'
+
+Started POST "/__better_errors/9371be574ea6e95b/variables" for 127.0.0.1 at 2018-03-27 11:14:45 +0100
+Started GET "/" for 127.0.0.1 at 2018-03-27 11:14:59 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/katelait/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (6.6ms)
+Completed 200 OK in 20ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+

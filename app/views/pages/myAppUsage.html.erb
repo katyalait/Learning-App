@@ -5,10 +5,24 @@
     <meta charset="utf-8" />
 
     <title>My App Usage</title>
-<%= stylesheet_link_tag    'application', media: 'all'%>
-<%= javascript_include_tag 'application' %>
-<%= javascript_include_tag 'myOwn' %>
-<%= csrf_meta_tags %>
+<%= stylesheet_link_tag    'application', media: 'all'%> <!--
+<%= javascript_include_tag 'application' %>  -->
+<%= javascript_include_tag 'jquery' %>
+<%= javascript_include_tag 'bootstrap' %>
+<%= javascript_include_tag 'metisMenu' %>
+<%= javascript_include_tag 'scripts' %> 
+<%= javascript_include_tag 'sb-admin-2' %>
+<%= javascript_include_tag 'raphael' %> 
+<%= javascript_include_tag 'morris' %> 
+<%= javascript_include_tag 'excanvas' %>
+<%= javascript_include_tag 'myOwn' %> 
+<%= javascript_include_tag 'jquery.flot' %>
+<%= javascript_include_tag 'jquery.flot.pie' %>
+<%= javascript_include_tag 'jquery.flot.resize' %> 
+<%= javascript_include_tag 'jquery.flot.time' %> 
+<%= javascript_include_tag 'jquery.flot.tooltip' %> 
+<!--
+<%= csrf_meta_tags %> -->
 </head>
 <%= render @pages || "top_nav" %>
 <%= render @pages || "side_nav" %>
