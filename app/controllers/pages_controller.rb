@@ -8,11 +8,27 @@ class PagesController < ApplicationController
   end
 
   def myAppUsage
+    current_user
   end
   
   def myLearning
   end
   
+  def myLearningTwo
+  end
+
+  def myGoals
+  end
+  
+  def weeklyOverview
+  end
+
+  def myLocationsThree
+  end
+
+  def myLocationsTwo
+  end 
+
   def myLocations
   end
 

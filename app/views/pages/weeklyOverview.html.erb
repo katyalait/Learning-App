@@ -1,0 +1,91 @@
+<%= render @pages || "header" %>
+<%= javascript_include_tag 'map' %>
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?sensor=false" %>
+<%= javascript_include_tag 'jquery' %>
+<%= javascript_include_tag 'myOwn' %> 
+<%= javascript_include_tag 'jquery.flot' %>
+<%= javascript_include_tag 'jquery.flot.pie' %>
+<%= javascript_include_tag 'jquery.flot.resize' %> 
+<%= javascript_include_tag 'jquery.flot.time' %> 
+<%= javascript_include_tag 'jquery.flot.tooltip' %> 
+
+<%= javascript_include_tag 'bootstrap' %>
+<%= javascript_include_tag 'metisMenu' %>
+<%= javascript_include_tag 'scripts' %> 
+<%= javascript_include_tag 'sb-admin-2' %>
+<%= javascript_include_tag 'raphael' %> 
+<%= javascript_include_tag 'morris' %> 
+<%= javascript_include_tag 'excanvas' %>
+
+</head>
+<%= render @pages || "top_nav" %>
+<%= render @pages || "side_nav" %>
+
+    <div id="page-wrapper">
+        <div class="row">
+        <div class="col-lg-12">
+            <p> </p>
+        </div>
+        <div class="col-lg-12" style="height:300px;">
+            <div id="map-canvas" />
+         </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Weekly Overview</h1>
+            </div>
+            <div class="col-lg-5">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Time Spent Learning
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Learning Topic</th>
+                                        <th>Hours Spent Learning</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Java</td>
+                                        <td>1.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Art</td>
+                                        <td>0.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>History</td>
+                                        <td>2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- <div class="row"> -->
+            <div class="col-lg-7">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Minutes of App Used Per Day
+                    </div>
+                    <div class="panel-body">
+                        <div id="morris-area-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+

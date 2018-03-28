@@ -5306,3 +5306,1061 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 20ms (Views: 9.4ms | ActiveRecord: 0.0ms)
 
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Started GET "/" for 127.0.0.1 at 2018-03-28 12:06:04 +0100
+  [1m[35m (58.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+Started GET "/pages/index" for 127.0.0.1 at 2018-03-28 12:06:58 +0100
+  Rendered sessions/new.html.erb within layouts/application (65320.9ms)
+Completed 500 Internal Server Error in 65356ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial sessions/_top_nav, application/_top_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/katelait/Desktop/Learning-App/app/views"
+:
+  app/views/sessions/new.html.erb:16:in `_app_views_sessions_new_html_erb__920496021__626892558'
+
+Processing by PagesController#index as HTML
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 12:07:11 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (816.8ms)
+Completed 200 OK in 829ms (Views: 827.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` IS NULL LIMIT 1[0m
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/_header.html.erb (954.8ms)
+  Rendered pages/_top_nav.html.erb (0.1ms)
+  Rendered pages/_side_nav.html.erb (0.1ms)
+  Rendered pages/_end_side_nav.html.erb (0.1ms)
+  Rendered pages/index.html.erb within layouts/application (985.8ms)
+Completed 500 Internal Server Error in 1872ms (ActiveRecord: 5.3ms)
+
+
+
+NoMethodError - undefined method `Username' for nil:NilClass:
+  app/views/pages/index.html.erb:13:in `_app_views_pages_index_html_erb__508097377__671305328'
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 12:07:17 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/_end_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (656.6ms)
+Completed 200 OK in 667ms (Views: 662.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:07:21 +0100
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (1.5ms)
+  Rendered pages/_end_side_nav.html.erb (1.6ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (758.8ms)
+Completed 200 OK in 765ms (Views: 763.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:07:24 +0100
+Processing by PagesController#myAppUsage as HTML
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.9ms)
+  Rendered pages/_side_nav.html.erb (1.5ms)
+  Rendered pages/_end_side_nav.html.erb (2.7ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (1114.4ms)
+Completed 200 OK in 1152ms (Views: 1147.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:10:54 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1322.5ms)
+Completed 500 Internal Server Error in 1333ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial sessions/_top_nav, application/_top_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/katelait/Desktop/Learning-App/app/views"
+:
+  app/views/sessions/new.html.erb:16:in `_app_views_sessions_new_html_erb__920496021__661766438'
+
+Started POST "/__better_errors/d495eb4291aea31e/variables" for 127.0.0.1 at 2018-03-28 12:10:55 +0100
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 12:11:55 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.1ms)
+  Rendered pages/_side_nav.html.erb (0.8ms)
+  Rendered pages/_end_side_nav.html.erb (0.6ms)
+  Rendered pages/myLearning.html.erb within layouts/application (722.9ms)
+Completed 200 OK in 728ms (Views: 727.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:13:21 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - `@.' is not allowed as an instance variable name
+/home/katelait/Desktop/Learning-App/app/views/sessions/new.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+...output_buffer.append=( render @../pages || "top_nav" );@outp...
+...                              ^:
+  app/views/sessions/new.html.erb:16:in `'
+
+Started POST "/__better_errors/4e0f766fe955bf1c/variables" for 127.0.0.1 at 2018-03-28 12:13:21 +0100
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:14:36 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_top_nav.html.erb (0.9ms)
+  Rendered sessions/_side_nav.html.erb (1.2ms)
+  Rendered sessions/_end_side_nav.html.erb (0.6ms)
+  Rendered sessions/new.html.erb within layouts/application (2746.7ms)
+Completed 200 OK in 2765ms (Views: 2757.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:17:58 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_top_nav.html.erb (1.3ms)
+  Rendered sessions/_side_nav.html.erb (0.7ms)
+  Rendered sessions/_end_side_nav.html.erb (2.0ms)
+  Rendered sessions/new.html.erb within layouts/application (997.4ms)
+Completed 200 OK in 1014ms (Views: 1011.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-03-28 12:18:06 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vvVoq9f02F0zeWuWkTkSaTPZqzk9TdoyqpmfAvtCNE0oug1hHEk/9QdDbllDgbYKLnPFVucFcXiPAg7HOVyrbA==", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`Username` = '' LIMIT 1[0m
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_top_nav.html.erb (1.9ms)
+  Rendered sessions/_side_nav.html.erb (0.6ms)
+  Rendered sessions/_end_side_nav.html.erb (0.7ms)
+  Rendered sessions/new.html.erb within layouts/application (1065.4ms)
+Completed 200 OK in 1092ms (Views: 1076.5ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-03-28 12:18:16 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LS0/YP0iWqToeaIb7fl4X3Zd2qdWMX8HMip5r9DpaDq7YlqqNp+9DNxDp9Q/Qdw8a/e0yIx51E0XsehqEvf3Gw==", "session"=>{"username"=>"monika", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`Username` = 'monika' LIMIT 1[0m
+Redirected to http://localhost:3000/pages/index
+Completed 302 Found in 77ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2018-03-28 12:18:16 +0100
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/_header.html.erb (1167.6ms)
+  Rendered pages/_top_nav.html.erb (0.9ms)
+  Rendered pages/_side_nav.html.erb (3.9ms)
+  Rendered pages/_end_side_nav.html.erb (2.2ms)
+  Rendered pages/index.html.erb within layouts/application (1197.5ms)
+Completed 200 OK in 1215ms (Views: 1205.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:20:03 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_top_nav.html.erb (2.1ms)
+  Rendered sessions/_side_nav.html.erb (1.4ms)
+  Rendered sessions/_end_side_nav.html.erb (1.3ms)
+  Rendered sessions/new.html.erb within layouts/application (1337.3ms)
+Completed 200 OK in 1347ms (Views: 1343.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:20:33 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting ')'
+...ame, class: 'form-control' type: 'email');@output_buffer.saf...
+...                           ^~~~
+/home/katelait/Desktop/Learning-App/app/views/sessions/new.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ord, class: 'form-control' type: 'password' );@output_buffer...
+...                           ^~~~:
+  app/views/sessions/new.html.erb:33:in `'
+
+Started POST "/__better_errors/d0382268fe5763ac/variables" for 127.0.0.1 at 2018-03-28 12:20:34 +0100
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:20:50 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_top_nav.html.erb (1.7ms)
+  Rendered sessions/_side_nav.html.erb (1.7ms)
+  Rendered sessions/_end_side_nav.html.erb (0.6ms)
+  Rendered sessions/new.html.erb within layouts/application (1067.3ms)
+Completed 200 OK in 1084ms (Views: 1081.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:21:58 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_top_nav.html.erb (0.9ms)
+  Rendered sessions/_side_nav.html.erb (2.4ms)
+  Rendered sessions/_end_side_nav.html.erb (1.0ms)
+  Rendered sessions/new.html.erb within layouts/application (1178.4ms)
+Completed 200 OK in 1190ms (Views: 1188.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:22:20 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_top_nav.html.erb (1.0ms)
+  Rendered sessions/_side_nav.html.erb (1.4ms)
+  Rendered sessions/_end_side_nav.html.erb (0.7ms)
+  Rendered sessions/new.html.erb within layouts/application (1054.5ms)
+Completed 200 OK in 1073ms (Views: 1070.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:26:53 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1014.7ms)
+Completed 200 OK in 1029ms (Views: 1026.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-03-28 12:29:35 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lU3DTe+XfeEyOrz0ppgOCzWZ1X73LtB6ot6lVKUviMcDAqaHJCqaSQYAuTt0IKpoKDO7ES1mezCHRTSRZzEX5g==", "session"=>{"username"=>"monika", "password"=>"[FILTERED]"}, "remember"=>"Remember Me", "commit"=>"Log in"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`Username` = 'monika' LIMIT 1[0m
+Redirected to http://localhost:3000/pages/index
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2018-03-28 12:29:35 +0100
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/_header.html.erb (1162.8ms)
+  Rendered pages/_top_nav.html.erb (1.4ms)
+  Rendered pages/_side_nav.html.erb (2.1ms)
+  Rendered pages/_end_side_nav.html.erb (0.8ms)
+  Rendered pages/index.html.erb within layouts/application (1180.3ms)
+Completed 200 OK in 1194ms (Views: 1187.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-28 12:35:21 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1054.1ms)
+Completed 200 OK in 1066ms (Views: 1063.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-03-28 12:35:27 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AMwuNIYlkqFO5UyfU2N74C/wSGzmBjaEie1v8sCF2sWWg0v+TZh1CXrfSVCB29+DMlomAzxOnc6sdv43AptF5A==", "session"=>{"username"=>"monika", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`Username` = 'monika' LIMIT 1[0m
+Redirected to http://localhost:3000/pages/myAppUsage
+Completed 302 Found in 61ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:35:27 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (1004.4ms)
+  Rendered pages/_top_nav.html.erb (1.9ms)
+  Rendered pages/_side_nav.html.erb (1.4ms)
+  Rendered pages/_end_side_nav.html.erb (7.6ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (1122.6ms)
+Completed 200 OK in 1145ms (Views: 1136.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:35:34 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (1279.0ms)
+  Rendered pages/_top_nav.html.erb (1.2ms)
+  Rendered pages/_side_nav.html.erb (1.5ms)
+  Rendered pages/_end_side_nav.html.erb (2.8ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (1412.0ms)
+Completed 200 OK in 1457ms (Views: 1435.3ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:36:26 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.5ms)
+  Rendered pages/_side_nav.html.erb (3.3ms)
+  Rendered pages/_end_side_nav.html.erb (5.0ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (1123.5ms)
+Completed 200 OK in 1156ms (Views: 1131.8ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-03-28 12:36:34 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AMwuNIYlkqFO5UyfU2N74C/wSGzmBjaEie1v8sCF2sWWg0v+TZh1CXrfSVCB29+DMlomAzxOnc6sdv43AptF5A==", "session"=>{"username"=>"monika", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`Username` = 'monika' LIMIT 1[0m
+Redirected to http://localhost:3000/pages/myAppUsage
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:36:34 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.2ms)
+  Rendered pages/_side_nav.html.erb (4.1ms)
+  Rendered pages/_end_side_nav.html.erb (0.7ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (1195.4ms)
+Completed 200 OK in 1207ms (Views: 1203.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:37:45 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (380.8ms)
+  Rendered pages/_top_nav.html.erb (3.4ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/_end_side_nav.html.erb (0.5ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (572.6ms)
+Completed 200 OK in 579ms (Views: 574.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:41:05 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (346.6ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.8ms)
+  Rendered pages/_end_side_nav.html.erb (2.2ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (456.7ms)
+Completed 200 OK in 483ms (Views: 470.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:46:31 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (273.6ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/_end_side_nav.html.erb (0.3ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (377.6ms)
+Completed 200 OK in 385ms (Views: 380.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:46:42 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (249.2ms)
+  Rendered pages/_top_nav.html.erb (8.8ms)
+  Rendered pages/_side_nav.html.erb (1.7ms)
+  Rendered pages/_end_side_nav.html.erb (0.8ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (403.3ms)
+Completed 200 OK in 408ms (Views: 406.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:48:12 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (349.1ms)
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.8ms)
+  Rendered pages/_end_side_nav.html.erb (0.7ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (544.5ms)
+Completed 200 OK in 578ms (Views: 548.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 12:49:43 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (450.0ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (634.6ms)
+Completed 200 OK in 644ms (Views: 639.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 14:05:34 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (11158.5ms)
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (11325.2ms)
+Completed 200 OK in 11370ms (Views: 11336.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 14:06:47 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (458.7ms)
+  Rendered pages/_top_nav.html.erb (1.2ms)
+  Rendered pages/_side_nav.html.erb (1.1ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (685.6ms)
+Completed 200 OK in 712ms (Views: 700.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 14:07:10 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (3.6ms)
+  Rendered pages/_side_nav.html.erb (1.0ms)
+  Rendered pages/_end_side_nav.html.erb (1.2ms)
+  Rendered pages/myLocations.html.erb within layouts/application (2256.9ms)
+Completed 200 OK in 2267ms (Views: 2264.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 14:14:07 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (1.5ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/_end_side_nav.html.erb (1.2ms)
+  Rendered pages/myLocations.html.erb within layouts/application (1255.8ms)
+Completed 200 OK in 1291ms (Views: 1272.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 14:14:23 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (298.5ms)
+  Rendered pages/_top_nav.html.erb (1.7ms)
+  Rendered pages/_side_nav.html.erb (3.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (496.1ms)
+Completed 200 OK in 513ms (Views: 507.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 14:14:29 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (399.8ms)
+  Rendered pages/_top_nav.html.erb (2.8ms)
+  Rendered pages/_side_nav.html.erb (3.9ms)
+  Rendered pages/myLearning.html.erb within layouts/application (540.8ms)
+Completed 200 OK in 585ms (Views: 570.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 14:15:09 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (361.5ms)
+  Rendered pages/_top_nav.html.erb (0.8ms)
+  Rendered pages/_side_nav.html.erb (1.2ms)
+  Rendered pages/myLearning.html.erb within layouts/application (562.8ms)
+Completed 200 OK in 570ms (Views: 567.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 14:16:12 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (599.1ms)
+  Rendered pages/_top_nav.html.erb (1.2ms)
+  Rendered pages/_side_nav.html.erb (0.8ms)
+  Rendered pages/myLearning.html.erb within layouts/application (1644.2ms)
+Completed 200 OK in 1674ms (Views: 1668.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 14:17:37 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (449.8ms)
+  Rendered pages/_top_nav.html.erb (2.5ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/myLearning.html.erb within layouts/application (1442.0ms)
+Completed 200 OK in 1463ms (Views: 1460.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 14:21:56 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (339.5ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (1.2ms)
+  Rendered pages/myLearning.html.erb within layouts/application (1231.7ms)
+Completed 200 OK in 1243ms (Views: 1240.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 14:30:44 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (345.6ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (2.8ms)
+  Rendered pages/myLearning.html.erb within layouts/application (1248.8ms)
+Completed 200 OK in 1260ms (Views: 1256.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning2.html" for 127.0.0.1 at 2018-03-28 14:34:26 +0100
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"myLearning2.html"}
+  Rendering pages/myLearning2.html.erb within layouts/application
+  Rendered pages/myLearning2.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial high_voltage/pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/katelait/Desktop/Learning-App/app/views"
+:
+  app/views/pages/myLearning2.html.erb:1:in `_app_views_pages_my_earning__html_erb___476113837__633855658'
+
+Started POST "/__better_errors/17fdc91f6e356aa2/variables" for 127.0.0.1 at 2018-03-28 14:34:26 +0100
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 14:35:13 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (276.3ms)
+  Rendered pages/_top_nav.html.erb (1.4ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/myLearning.html.erb within layouts/application (1197.7ms)
+Completed 200 OK in 1227ms (Views: 1215.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning2" for 127.0.0.1 at 2018-03-28 14:35:19 +0100
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"myLearning2"}
+  Rendering pages/myLearning2.html.erb within layouts/application
+  Rendered pages/myLearning2.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial high_voltage/pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/katelait/Desktop/Learning-App/app/views"
+:
+  app/views/pages/myLearning2.html.erb:1:in `_app_views_pages_my_earning__html_erb___476113837__653508528'
+
+Started POST "/__better_errors/f138a3818951cfbc/variables" for 127.0.0.1 at 2018-03-28 14:35:19 +0100
+Started GET "/pages/myLearning2" for 127.0.0.1 at 2018-03-28 14:36:32 +0100
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"myLearning2"}
+  Rendering pages/myLearning2.html.erb within layouts/application
+  Rendered pages/myLearning2.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial high_voltage/pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/katelait/Desktop/Learning-App/app/views"
+:
+  app/views/pages/myLearning2.html.erb:1:in `_app_views_pages_my_earning__html_erb___476113837__653604238'
+
+Started POST "/__better_errors/f8a6f68c05d987cd/variables" for 127.0.0.1 at 2018-03-28 14:36:32 +0100
+Started GET "/pages/myLearningTwo" for 127.0.0.1 at 2018-03-28 15:02:22 +0100
+Processing by PagesController#myLearningTwo as HTML
+  Rendering pages/myLearningTwo.html.erb within layouts/application
+  Rendered pages/_header.html.erb (214.5ms)
+  Rendered pages/_top_nav.html.erb (2.0ms)
+  Rendered pages/_side_nav.html.erb (1.4ms)
+  Rendered pages/myLearningTwo.html.erb within layouts/application (991.6ms)
+Completed 200 OK in 998ms (Views: 996.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 15:02:28 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (265.6ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (541.1ms)
+Completed 200 OK in 545ms (Views: 544.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:02:30 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/_end_side_nav.html.erb (0.2ms)
+  Rendered pages/myLocations.html.erb within layouts/application (453.5ms)
+Completed 200 OK in 458ms (Views: 456.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:08:24 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/myLocations.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected '<', expecting ')'
+<%= javascript_include_tag 'ap...
+^:
+  app/views/pages/myLocations.html.erb:2:in `'
+
+Started POST "/__better_errors/f7bf42510207b0e1/variables" for 127.0.0.1 at 2018-03-28 15:08:25 +0100
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:08:44 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (4815.0ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.2ms)
+  Rendered pages/myLocations.html.erb within layouts/application (6066.6ms)
+Completed 200 OK in 6090ms (Views: 6087.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:09:18 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (289.2ms)
+  Rendered pages/_top_nav.html.erb (1.5ms)
+  Rendered pages/_side_nav.html.erb (0.8ms)
+  Rendered pages/myLocations.html.erb within layouts/application (711.0ms)
+Completed 200 OK in 717ms (Views: 714.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:10:04 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (207.6ms)
+  Rendered pages/myLocations.html.erb within layouts/application (1707.9ms)
+Completed 500 Internal Server Error in 1714ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::Rails::Helper::AssetNotPrecompiled - Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( map.js )` to `config/initializers/assets.rb` and restart your server:
+  app/views/pages/myLocations.html.erb:3:in `_app_views_pages_my_ocations_html_erb__925755915__692188138'
+
+Started POST "/__better_errors/6f68c3cef62852ac/variables" for 127.0.0.1 at 2018-03-28 15:10:06 +0100
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:10:39 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (154.9ms)
+  Rendered pages/myLocations.html.erb within layouts/application (918.7ms)
+Completed 500 Internal Server Error in 925ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::Rails::Helper::AssetNotPrecompiled - Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( map.js )` to `config/initializers/assets.rb` and restart your server:
+  app/views/pages/myLocations.html.erb:3:in `_app_views_pages_my_ocations_html_erb__925755915__671912748'
+
+Started POST "/__better_errors/da4953952afa6aef/variables" for 127.0.0.1 at 2018-03-28 15:10:40 +0100
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:10:56 +0100
+  [1m[35m (7.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (1607.6ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (2443.9ms)
+Completed 200 OK in 2479ms (Views: 2454.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-28 15:16:59 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2000.6ms)
+Completed 200 OK in 2019ms (Views: 2015.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-03-28 15:17:05 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mXGZo8uYTj59w3xU7wss3v7ol+F1WWDD0uhf0wWrYckPPvxpACWplkn5eZs9s4i940L5jq8Ry4n3c84Wx7X+6A==", "session"=>{"username"=>"monika", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`Username` = 'monika' LIMIT 1[0m
+Redirected to http://localhost:3000/pages/myAppUsage
+Completed 302 Found in 65ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 15:17:06 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (220.8ms)
+  Rendered pages/_top_nav.html.erb (1.5ms)
+  Rendered pages/_side_nav.html.erb (3.6ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (437.6ms)
+Completed 200 OK in 449ms (Views: 442.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:17:10 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (250.9ms)
+  Rendered pages/_top_nav.html.erb (0.8ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (664.6ms)
+Completed 200 OK in 667ms (Views: 666.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:18:53 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (270.4ms)
+  Rendered pages/_top_nav.html.erb (2.0ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myLocations.html.erb within layouts/application (786.5ms)
+Completed 200 OK in 794ms (Views: 790.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:19:01 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (266.0ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.2ms)
+  Rendered pages/myLocations.html.erb within layouts/application (754.6ms)
+Completed 200 OK in 757ms (Views: 756.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:19:57 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (272.6ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.2ms)
+  Rendered pages/myLocations.html.erb within layouts/application (806.1ms)
+Completed 200 OK in 811ms (Views: 809.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-03-28 15:26:30 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (281.7ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (526.7ms)
+Completed 200 OK in 536ms (Views: 533.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-03-28 15:30:32 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (240.3ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myGoals.html.erb within layouts/application (496.5ms)
+Completed 200 OK in 500ms (Views: 498.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:30:35 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (269.5ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (631.9ms)
+Completed 200 OK in 635ms (Views: 634.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/weeklyOverview" for 127.0.0.1 at 2018-03-28 15:30:56 +0100
+Processing by PagesController#weeklyOverview as HTML
+  Rendering pages/weeklyOverview.html.erb within layouts/application
+  Rendered pages/_header.html.erb (321.0ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.2ms)
+  Rendered pages/weeklyOverview.html.erb within layouts/application (564.3ms)
+Completed 200 OK in 568ms (Views: 566.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/weeklyOverview" for 127.0.0.1 at 2018-03-28 15:31:01 +0100
+Processing by PagesController#weeklyOverview as HTML
+  Rendering pages/weeklyOverview.html.erb within layouts/application
+  Rendered pages/_header.html.erb (257.5ms)
+  Rendered pages/_top_nav.html.erb (2.0ms)
+  Rendered pages/_side_nav.html.erb (0.9ms)
+  Rendered pages/weeklyOverview.html.erb within layouts/application (849.4ms)
+Completed 200 OK in 852ms (Views: 851.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-03-28 15:34:50 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (266.4ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myGoals.html.erb within layouts/application (553.5ms)
+Completed 200 OK in 557ms (Views: 555.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-03-28 15:36:08 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (245.6ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (4.0ms)
+  Rendered pages/myGoals.html.erb within layouts/application (846.6ms)
+Completed 200 OK in 857ms (Views: 854.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:36:13 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (262.9ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLocations.html.erb within layouts/application (544.7ms)
+Completed 200 OK in 547ms (Views: 546.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:37:13 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (342.5ms)
+  Rendered pages/_top_nav.html.erb (1.2ms)
+  Rendered pages/_side_nav.html.erb (3.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (925.1ms)
+Completed 200 OK in 937ms (Views: 929.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:38:26 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (262.0ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLocations.html.erb within layouts/application (917.3ms)
+Completed 200 OK in 925ms (Views: 921.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/weeklyOverview" for 127.0.0.1 at 2018-03-28 15:38:31 +0100
+Processing by PagesController#weeklyOverview as HTML
+  Rendering pages/weeklyOverview.html.erb within layouts/application
+  Rendered pages/_header.html.erb (257.4ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (1.7ms)
+  Rendered pages/weeklyOverview.html.erb within layouts/application (506.8ms)
+Completed 200 OK in 512ms (Views: 511.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/weeklyOverview" for 127.0.0.1 at 2018-03-28 15:38:33 +0100
+Processing by PagesController#weeklyOverview as HTML
+  Rendering pages/weeklyOverview.html.erb within layouts/application
+  Rendered pages/_header.html.erb (248.3ms)
+  Rendered pages/_top_nav.html.erb (1.0ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/weeklyOverview.html.erb within layouts/application (745.3ms)
+Completed 200 OK in 749ms (Views: 747.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/weeklyOverview" for 127.0.0.1 at 2018-03-28 15:38:57 +0100
+Processing by PagesController#weeklyOverview as HTML
+  Rendering pages/weeklyOverview.html.erb within layouts/application
+  Rendered pages/_header.html.erb (326.2ms)
+  Rendered pages/_top_nav.html.erb (1.8ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/weeklyOverview.html.erb within layouts/application (524.0ms)
+Completed 200 OK in 529ms (Views: 527.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/weeklyOverview" for 127.0.0.1 at 2018-03-28 15:39:18 +0100
+Processing by PagesController#weeklyOverview as HTML
+  Rendering pages/weeklyOverview.html.erb within layouts/application
+  Rendered pages/_header.html.erb (245.1ms)
+  Rendered pages/_top_nav.html.erb (1.0ms)
+  Rendered pages/_side_nav.html.erb (2.3ms)
+  Rendered pages/weeklyOverview.html.erb within layouts/application (387.4ms)
+Completed 200 OK in 391ms (Views: 389.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/weeklyOverview" for 127.0.0.1 at 2018-03-28 15:39:32 +0100
+Processing by PagesController#weeklyOverview as HTML
+  Rendering pages/weeklyOverview.html.erb within layouts/application
+  Rendered pages/_header.html.erb (238.5ms)
+  Rendered pages/_top_nav.html.erb (1.6ms)
+  Rendered pages/_side_nav.html.erb (1.3ms)
+  Rendered pages/weeklyOverview.html.erb within layouts/application (365.6ms)
+Completed 200 OK in 370ms (Views: 369.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 15:42:12 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (237.9ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (693.5ms)
+Completed 200 OK in 697ms (Views: 695.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:42:15 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (244.2ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (479.0ms)
+Completed 200 OK in 482ms (Views: 480.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:52:52 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (356.8ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.2ms)
+  Rendered pages/myLocations.html.erb within layouts/application (964.5ms)
+Completed 200 OK in 971ms (Views: 969.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 15:53:21 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (340.5ms)
+  Rendered pages/_top_nav.html.erb (2.5ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/myLocations.html.erb within layouts/application (1164.9ms)
+Completed 200 OK in 1176ms (Views: 1167.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocationsTwo.html" for 127.0.0.1 at 2018-03-28 15:53:27 +0100
+Processing by PagesController#myLocationsTwo as HTML
+  Rendering pages/myLocationsTwo.html.erb within layouts/application
+  Rendered pages/myLocationsTwo.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocationsTwo.html" for 127.0.0.1 at 2018-03-28 15:55:16 +0100
+Processing by PagesController#myLocationsTwo as HTML
+  Rendering pages/myLocationsTwo.html.erb within layouts/application
+  Rendered pages/_header.html.erb (322.0ms)
+  Rendered pages/_top_nav.html.erb (1.1ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myLocationsTwo.html.erb within layouts/application (858.3ms)
+Completed 200 OK in 862ms (Views: 861.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocationsTwo.html" for 127.0.0.1 at 2018-03-28 15:56:48 +0100
+Processing by PagesController#myLocationsTwo as HTML
+  Rendering pages/myLocationsTwo.html.erb within layouts/application
+  Rendered pages/_header.html.erb (244.5ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLocationsTwo.html.erb within layouts/application (875.1ms)
+Completed 200 OK in 879ms (Views: 877.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocationsTwo.html" for 127.0.0.1 at 2018-03-28 16:00:31 +0100
+Processing by PagesController#myLocationsTwo as HTML
+  Rendering pages/myLocationsTwo.html.erb within layouts/application
+  Rendered pages/_header.html.erb (355.8ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/myLocationsTwo.html.erb within layouts/application (1110.9ms)
+Completed 200 OK in 1118ms (Views: 1116.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 16:00:36 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (308.1ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLocations.html.erb within layouts/application (563.7ms)
+Completed 200 OK in 567ms (Views: 565.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-03-28 16:01:35 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (250.1ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myGoals.html.erb within layouts/application (506.3ms)
+Completed 200 OK in 511ms (Views: 509.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/weeklyOverview" for 127.0.0.1 at 2018-03-28 16:01:37 +0100
+Processing by PagesController#weeklyOverview as HTML
+  Rendering pages/weeklyOverview.html.erb within layouts/application
+  Rendered pages/_header.html.erb (239.2ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/weeklyOverview.html.erb within layouts/application (352.3ms)
+Completed 200 OK in 355ms (Views: 354.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 16:01:40 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (213.8ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (301.6ms)
+Completed 200 OK in 307ms (Views: 303.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-03-28 16:01:42 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (342.3ms)
+  Rendered pages/_top_nav.html.erb (1.9ms)
+  Rendered pages/_side_nav.html.erb (3.2ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (515.5ms)
+Completed 200 OK in 527ms (Views: 524.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-03-28 16:01:47 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (245.2ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLearning.html.erb within layouts/application (729.3ms)
+Completed 200 OK in 732ms (Views: 731.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-03-28 16:01:51 +0100
+Processing by PagesController#myLocations as HTML
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (250.6ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLocations.html.erb within layouts/application (533.3ms)
+Completed 200 OK in 540ms (Views: 538.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocationsTwo.html" for 127.0.0.1 at 2018-03-28 16:03:34 +0100
+Processing by PagesController#myLocationsTwo as HTML
+  Rendering pages/myLocationsTwo.html.erb within layouts/application
+  Rendered pages/_header.html.erb (322.2ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocationsTwo.html.erb within layouts/application (810.8ms)
+Completed 200 OK in 819ms (Views: 813.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocationsThree" for 127.0.0.1 at 2018-03-28 16:03:38 +0100
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"myLocationsThree"}
+  Rendering pages/myLocationsThree.html.erb within layouts/application
+  Rendered pages/myLocationsThree.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial high_voltage/pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/katelait/Desktop/Learning-App/app/views"
+:
+  app/views/pages/myLocationsThree.html.erb:1:in `_app_views_pages_my_ocations_hree_html_erb__647133257__657443638'
+
+Started POST "/__better_errors/9d84b2596b331174/variables" for 127.0.0.1 at 2018-03-28 16:03:38 +0100
+Started GET "/pages/myLocationsThree" for 127.0.0.1 at 2018-03-28 16:04:43 +0100
+Processing by PagesController#myLocationsThree as HTML
+  Rendering pages/myLocationsThree.html.erb within layouts/application
+  Rendered pages/_header.html.erb (511.4ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLocationsThree.html.erb within layouts/application (1206.5ms)
+Completed 200 OK in 1213ms (Views: 1209.5ms | ActiveRecord: 0.0ms)
+
+

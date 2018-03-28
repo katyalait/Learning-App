@@ -11,10 +11,22 @@ Rails.application.routes.draw do
   get 'pages/myLocations'
 
   get 'pages/myAppUsage'
+  
+  get 'pages/myLearningTwo'
+
+  get 'pages/myGoals'
+
+  get 'pages/weeklyOverview'
+
+  get 'pages/myLocationsTwo'
 
   get 'pages/top-nav'
 
   get 'pages/side-nav'
+
+  get 'pages/header'
+
+  get 'pages/myLocationsThree'
  
   get 'pages/singleAppUsage'
 

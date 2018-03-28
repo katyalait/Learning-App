@@ -1,0 +1,116 @@
+<%= render @pages || "header" %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true%>
+<%= javascript_include_tag 'map' %>
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?sensor=false" %>
+<%= javascript_include_tag 'jquery' %>
+<%= javascript_include_tag 'bootstrap' %>
+<%= javascript_include_tag 'metisMenu' %>
+<%= javascript_include_tag 'scripts' %> 
+<%= javascript_include_tag 'sb-admin-2' %>
+<%= javascript_include_tag 'raphael' %> 
+<%= javascript_include_tag 'morris' %> 
+<%= javascript_include_tag 'excanvas' %>
+<%= javascript_include_tag 'myOwn' %> 
+<%= javascript_include_tag 'jquery.flot' %>
+<%= javascript_include_tag 'jquery.flot.pie' %>
+<%= javascript_include_tag 'jquery.flot.resize' %> 
+<%= javascript_include_tag 'jquery.flot.time' %> 
+<%= javascript_include_tag 'jquery.flot.tooltip' %> 
+</head>
+<%= render @pages || "top_nav" %>
+<%= render @pages || "side_nav" %>
+            <div id="page-wrapper">
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">My Locations</h1>
+                </div>
+                <div class="col-lg-1"></div>
+                <form class="col-lg-10">
+                    <!-- <form> -->
+                    <form role="form">
+                        <div class="form-group">
+                            <div class="table">
+                                <table class="table table-hover table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Visit</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Effectiveness</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <p>Coffee</p>
+                                            </td>
+                                            <td>10/12/2018</td>
+
+                                            <td><input class="form-control slider" type="range" min="0" max="100" id="myRange" 																									value="50"> </td>
+                                            <td><span id="demo"></span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>
+                                                <p>Study</p>
+                                            </td>
+                                            <td>18/12/2018</td>
+
+
+                                            <td><input class="form-control slider" type="range" min="0" max="100" id="myRange2" 																									value="50"> </td>
+                                            <td><span id="demo2"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>
+                                                <p>Study</p>
+                                            </td>
+                                            <td>28/12/2018</td>
+
+                                            <td><input class="form-control slider" type="range" min="0" max="100" id="myRange3" 																									value="50"> </td>
+                                            <td><span id="demo3"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>
+                                                <p>Entertainment</p>
+                                            </td>
+                                            <td>09/01/2018</td>
+
+                                            <td><input class="form-control slider" type="range" min="0" max="100" id="myRange4" 																									value="50"> </td>
+                                            <td><span id="demo4"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>
+                                                <p>Entertainment</p>
+                                            </td>
+                                            <td>12/01/2018</td>
+
+                                            <td><input class="form-control slider" type="range" min="0" max="100" id="myRange5" 																									value="50"> </td>
+                                            <td><span id="demo5"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-3">
+                                <button type="button" onclick="location.href='myLocationsThree';" class="btn btn-outline btn-primary 																				btn-lg btn-block addTopicButton">
+                                Submit</button>
+                            </div>
+                        </div>
+                    </form>
+								</div>
+            </div>
+            <!-- End of Form -->
+            
+        </div>
+       </body>
+      </html>
+    

@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-      <title>My Learning</title>
- <%= stylesheet_link_tag    'application', media: 'all'%>
-	<%= javascript_include_tag 'application' %>
-	<%= javascript_include_tag 'flot-data' %>
-       <%= javascript_include_tag 'bootstrap' %>
+<%= render @pages || "header" %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true%> 
+<%= javascript_include_tag 'flot-data' %>
+<%= javascript_include_tag 'bootstrap' %>
 <%= javascript_include_tag 'jquery.flot' %>
 <%= javascript_include_tag 'jquery.flot.pie' %>
 <%= javascript_include_tag 'jquery.flot.resize' %> 
 <%= javascript_include_tag 'jquery.flot.time' %> 
 <%= javascript_include_tag 'jquery.flot.tooltip' %> 
-
+<%= javascript_include_tag 'myOwn.js' %>
 <%= javascript_include_tag 'metisMenu' %>
 <%= javascript_include_tag 'scripts' %> 
 <%= javascript_include_tag 'sb-admin-2' %>
@@ -26,32 +15,52 @@
 <%= javascript_include_tag 'morris' %> 
 <%= javascript_include_tag 'excanvas' %>
 
-
-<%= csrf_meta_tags %>
 </head>
 <%= render @pages || "top_nav" %>
 <%= render @pages || "side_nav" %>
-<%= render @pages || "end_side_nav" %>
   
   <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">My Topics</h1>
             </div>
-        </div>
-		<!-- Search Bar -->		
-		<div class="row">
-			<div class="col-lg-6">
-				<form role="form">
-                    <div class="form-group input-group">
-                        <input type="text" class="form-control" placeholder="Search Learning Topics">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Add Topic</i></button>
-                            </span>
+        </div>		
+			<!-- Parent Topic Selector -->
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="form-group">
+						<label>Select Parent Topic</label>
+						<select class="form-control">
+                            			        <option>--Choose One--</option>
+							<option>Entertainment</option>
+							<option>Sport</option>
+							<option>Culture</option>
+							<option>Technology</option>
+							<option>Geography</option>
+							<option>Science</option>
+						</select>
+					</div>	
+                    <div class="form-group">
+                        <label>Select Sub-Topic</label>
+                        <select class="form-control">
+                            <option>--Choose One--</option>
+                            <option>Programming</option>
+                            <option>Engineering</option>
+                            <option>Statistics</option>
+                            <option>Innovation</option>
+                            <option>Hardware</option>
+                        </select>
                     </div>
-                </form>		
-			</div>
+  		 <div class="form-group input-group">
+                            <input type="text" class="form-control" placeholder="Give your topic a name">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" onclick="location.href='myLearning2';">
+                                    Add Topic
+                                </button>
+                            </span>
+                        </div>
 		</div>
+	</div>
 		<!-- Table -->
 		<div class="col-lg-6">
 			<div class="panel panel-default">
@@ -104,7 +113,7 @@
 			</div>
 		</div>
     
-</div>
+	 </div>
 	
 </body>
 </html>
