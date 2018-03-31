@@ -35,7 +35,6 @@
                     <h1 class="page-header">My Locations</h1>
                     <h5><i>We have picked up you being in the following locations. Give us some context for the purpose and duration 			of your visits. </i> </h5>
                 </div>
-               
             </div>
                   <div class="row">
 				<div class="col-lg-1"></div>
@@ -57,7 +56,33 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                <% @count = 1%>
+                <% LocationReport.where(device_id: @userdevice).find_each do |location| %>
+                        <% @timestamp = Time.at(location.timestamp / 1000) %>
+                        <tr>
+                                <th scope="row"><%= @count =%></th>
+                                                <td>
+                                                    <select class="form-control" id="loc1">
+                                                        <option>Select One</option>
+                                                        <option>Coffee</option>
+                                                        <option>Study</option>
+                                                        <option>Entertainment</option>
+                                                    </select>
+                                                </td>
+                                                <td><%= @timestamp.strftime("%d/%m/%Y") =%></td>
+                                                <td><%= @timestamp.strftime("%H:%M")=%></td>
+                                                <td class="time-column">
+                                                    <input class="form-control" placeholder="hh:mm">
+
+                                                </td>
+                                                <td class="time-column">
+                                                    <input class="form-control" placeholder="hh:mm">
+                                                </td>
+                                                <td><input class="form-control input-sm" id="inputsm<%= @count =%>" type="text"></td>
+                                            </tr> 
+                                <% @count += 1%>
+                <% end %> 
+<!--                                            <tr>
                                                 <th scope="row">1</th>
                                                 <td>
                                                     <select class="form-control" id="loc1">
@@ -157,7 +182,7 @@
                                                     <input class="form-control" placeholder="hh:mm">
                                                 </td>
                                                 <td><input class="form-control input-sm" id="inputsm5" type="text"></td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
