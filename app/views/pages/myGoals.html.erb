@@ -91,9 +91,11 @@
                             
                 		<div class="row">
                             <div class="col-lg-6">
-                                <form role="form">
+                              <%form_for() do: |f| %> <!-- wasn't sure what to put here -->
                                     <div class="form-group">
-                                        <label>Topic Name</label>
+                                        <%= f.label :topic_choice%>
+
+					<!-- select function here that chooses all the topics related to the user and displays them -->
                                         <select class="form-control">
                                             <option>--Choose One--</option>
                                             <option>Functional Programming</option>
@@ -107,16 +109,17 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label>Goal Description</label>
-                                        <input class="form-control">
+                                        <%= f.label :goal_description%>
+                                         <%= f.text_field :goal_description, class: 'form-control', placeholder: 'Describe your goal' %>
                                     </div>
                                     <div class="form-group">
-                                        <label>Date (for completion)</label>
-                                        <input class="form-control" placeholder="DD/MM/YY">
+                                         <%= f.label :date_to_do_by%>
+                                         <%= f.text_field :goal_description, class: 'form-control', placeholder: 'dd/mm/yy' %>
                                         <p class="help-block">E.G. 04/04/18</p>
                                     </div>
                                     <div class="form-group">
-                                        <label>Applications Used</label>
+                                         <%= f.label :application_to_use%>
+					<!-- selection function that produces all the apps a user uses'
                                         <select multiple class="form-control">
                                             <option>--Hold CTRL To Choose--</option>
                                             <option>Whatsapp</option>
@@ -126,7 +129,7 @@
                                             <option>Kindle</option>
                                         </select>
                                     </div>
-                                    <button type="button" onclick="location.href='myGoals2.html';" class="btn btn-default">Submit</button>
+				<%= f.submit "Log in", class: "btn btn-primary" %> <!--- onclick="location.href='myGoals2.html';"  IT NEEDS TO GO TO THIS PAGE-->
                                          </form>
 							        </div>
                             

@@ -7168,3 +7168,135 @@ Processing by PagesController#myLocationsTwo as HTML
 Completed 200 OK in 1161ms (Views: 1153.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-01 22:30:01 +0100
+  [1m[35m (27.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4288.7ms)
+Completed 200 OK in 4317ms (Views: 4304.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-04-01 22:30:09 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"inbGQrn3RBqNPNooV75NdHIcbPZLsvkK5GIxoKb+vD8joEvWNcR2k8aXXpUslmAa6JTHsn7Ak/VMbuvnugW0Xg==", "session"=>{"username"=>"monika", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`Username` = 'monika' LIMIT 1[0m
+Redirected to http://localhost:3000/pages/myAppUsage
+Completed 302 Found in 64ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-04-01 22:30:09 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (221.8ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (366.3ms)
+Completed 200 OK in 399ms (Views: 381.4ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-01 22:30:16 +0100
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (279.9ms)
+  Rendered pages/_top_nav.html.erb (0.8ms)
+  Rendered pages/_side_nav.html.erb (1.5ms)
+  [1m[36mLocationReport Load (1.1ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`device_id` = '1a7be15e-909b-80de-782a-1789889caade' ORDER BY `locations`.`ID` ASC LIMIT 1000[0m
+  Rendered pages/myLocations.html.erb within layouts/application (1047.0ms)
+Completed 200 OK in 1117ms (Views: 1052.6ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-04-01 22:30:26 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (290.4ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (383.4ms)
+Completed 200 OK in 390ms (Views: 386.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-04-01 22:30:31 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (284.4ms)
+  Rendered pages/_top_nav.html.erb (1.1ms)
+  Rendered pages/_side_nav.html.erb (1.0ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (392.7ms)
+Completed 200 OK in 405ms (Views: 400.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-01 22:30:35 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (267.5ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/myGoals.html.erb within layouts/application (945.1ms)
+Completed 200 OK in 950ms (Views: 948.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals2.html" for 127.0.0.1 at 2018-04-01 22:30:49 +0100
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"myGoals2.html"}
+Completed 404 Not Found in 14ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template pages/myGoals2.html with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/katelait/Desktop/try_again/Learning-App/app/views"
+:
+
+Started POST "/__better_errors/2c8280481b2e900b/variables" for 127.0.0.1 at 2018-04-01 22:30:49 +0100
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-01 22:31:00 +0100
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (0.6ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (250.9ms)
+  Rendered pages/_top_nav.html.erb (0.9ms)
+  Rendered pages/_side_nav.html.erb (0.7ms)
+  [1m[36mLocationReport Load (1.1ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`device_id` = '1a7be15e-909b-80de-782a-1789889caade' ORDER BY `locations`.`ID` ASC LIMIT 1000[0m
+  Rendered pages/myLocations.html.erb within layouts/application (762.2ms)
+Completed 200 OK in 771ms (Views: 765.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-04-01 22:31:01 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (313.9ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (2.1ms)
+  Rendered pages/myLearning.html.erb within layouts/application (944.9ms)
+Completed 200 OK in 958ms (Views: 956.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-04-01 22:31:05 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (236.4ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/myLearning.html.erb within layouts/application (792.2ms)
+Completed 200 OK in 799ms (Views: 797.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-01 22:31:14 +0100
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (335.4ms)
+  Rendered pages/_top_nav.html.erb (1.1ms)
+  Rendered pages/_side_nav.html.erb (0.8ms)
+  [1m[36mLocationReport Load (1.5ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`device_id` = '1a7be15e-909b-80de-782a-1789889caade' ORDER BY `locations`.`ID` ASC LIMIT 1000[0m
+  Rendered pages/myLocations.html.erb within layouts/application (982.1ms)
+Completed 200 OK in 992ms (Views: 985.9ms | ActiveRecord: 2.6ms)
+
+
