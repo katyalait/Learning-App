@@ -7300,3 +7300,614 @@ Processing by PagesController#myLocations as HTML
 Completed 200 OK in 992ms (Views: 985.9ms | ActiveRecord: 2.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-02 22:42:19 +0100
+
+Mysql2::Error - Access denied for user 'root'@'localhost' (using password: YES):
+
+Started POST "/__better_errors/ff0d5c16f3a50499/variables" for 127.0.0.1 at 2018-04-02 22:42:20 +0100
+Started GET "/" for 127.0.0.1 at 2018-04-02 22:42:54 +0100
+
+Mysql2::Error - Access denied for user 'root'@'localhost' (using password: YES):
+
+Started POST "/__better_errors/03381fced4b38b0e/variables" for 127.0.0.1 at 2018-04-02 22:42:54 +0100
+Started GET "/" for 127.0.0.1 at 2018-04-02 22:42:55 +0100
+
+Mysql2::Error - Access denied for user 'root'@'localhost' (using password: YES):
+
+Started POST "/__better_errors/2b7c675e5731d53c/variables" for 127.0.0.1 at 2018-04-02 22:42:55 +0100
+Started GET "/" for 127.0.0.1 at 2018-04-02 22:43:05 +0100
+  [1m[35m (43.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (15.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2552.3ms)
+Completed 200 OK in 2583ms (Views: 2573.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-04-02 22:43:15 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AAg8cbe02iSpN3/20oigR+hUs98wFXNFBKHG4l0LmqG3WtR4xT4vdT8PvrqESXAKO6WV+BKPyXnFEPRdB+9xXQ==", "session"=>{"username"=>"monika", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (50.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`Username` = 'monika' LIMIT 1[0m
+Redirected to http://localhost:3000/pages/myAppUsage
+Completed 302 Found in 177ms (ActiveRecord: 128.5ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-04-02 22:43:15 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (113.4ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (195.9ms)
+Completed 200 OK in 203ms (Views: 200.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 22:43:19 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/myGoals.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected tLABEL, expecting keyword_end
+...        '.freeze;form_for() do: |f| ;@output_buffer.safe_app...
+...                               ^:
+  app/views/pages/myGoals.html.erb:94:in `'
+
+Started POST "/__better_errors/e5c85d5177deb2a8/variables" for 127.0.0.1 at 2018-04-02 22:43:19 +0100
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 22:46:01 +0100
+  [1m[35m (14.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/myGoals.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected tLABEL, expecting keyword_end
+...l, url: pages_myGoals_path) do: |f| ;@output_buffer.safe_app...
+...                               ^:
+  app/views/pages/myGoals.html.erb:94:in `'
+
+Started POST "/__better_errors/1addb1d4ae3bbc3d/variables" for 127.0.0.1 at 2018-04-02 22:46:01 +0100
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 22:46:49 +0100
+  [1m[35m (28.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (8.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/myGoals.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected tLABEL, expecting keyword_end
+...n, url: pages_myGoals_path) do: |f| ;@output_buffer.safe_app...
+...                               ^:
+  app/views/pages/myGoals.html.erb:94:in `'
+
+Started POST "/__better_errors/35add8c37ed009da/variables" for 127.0.0.1 at 2018-04-02 22:46:50 +0100
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 22:48:19 +0100
+  [1m[35m (27.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/myGoals.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected tLABEL, expecting ')'
+...l, url: pages_myGoals_path) do: |f| );@output_buffer.safe_ap...
+...                               ^
+/home/edvinas/University Stuff/SWENG/Learning-App/app/views/pages/myGoals.html.erb:133: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;                         end 
+                                     ^
+/home/edvinas/University Stuff/SWENG/Learning-App/app/views/pages/myGoals.html.erb:150: syntax error, unexpected keyword_ensure, expecting ')'
+/home/edvinas/University Stuff/SWENG/Learning-App/app/views/pages/myGoals.html.erb:152: syntax error, unexpected keyword_end, expecting ')':
+  app/views/pages/myGoals.html.erb:94:in `'
+
+Started POST "/__better_errors/12a0b590bc1817a2/variables" for 127.0.0.1 at 2018-04-02 22:48:20 +0100
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 22:51:24 +0100
+  [1m[35m (36.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (710.0ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.7ms)
+  Rendered pages/myGoals.html.erb within layouts/application (1799.0ms)
+Completed 200 OK in 1814ms (Views: 1805.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 22:55:38 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (127.6ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.8ms)
+  Rendered pages/myGoals.html.erb within layouts/application (386.7ms)
+Completed 200 OK in 390ms (Views: 389.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 22:56:06 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (120.1ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myGoals.html.erb within layouts/application (382.9ms)
+Completed 200 OK in 386ms (Views: 384.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 22:56:58 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/pages/myGoals"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 22:58:32 +0100
+  [1m[35m (17.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p6RqYC9EdqF5rtK0zjROcs3Nw+8WhlqT86KGQkLk1BN17e7skEgz/kxPRwsBJxk8YSz01mQrsIvnK0BEk7QHRg==", "learning_goal"=>{"goal_description"=>"01/01/02"}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (717.4ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/myGoals.html.erb within layouts/application (1702.6ms)
+Completed 200 OK in 1716ms (Views: 1707.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:02:22 +0100
+  [1m[35m (31.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (712.0ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (1890.2ms)
+Completed 200 OK in 1911ms (Views: 1898.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:02:27 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFfLgbTUaLJP9TLu8IajRq+CMc78InIMbsEB9Gwlt15eHk8NC9gt7XoUp1E/lfQIA2MG946PmBR6SMfyvXVkCw==", "learning_goal"=>{"goal_description"=>""}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (126.1ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (380.3ms)
+Completed 200 OK in 383ms (Views: 382.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:03:09 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (117.5ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myGoals.html.erb within layouts/application (409.7ms)
+Completed 200 OK in 413ms (Views: 412.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:04:09 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (142.7ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (442.8ms)
+Completed 200 OK in 449ms (Views: 446.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:04:30 +0100
+  [1m[35m (34.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (669.0ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (1740.0ms)
+Completed 200 OK in 1753ms (Views: 1744.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:04:38 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (136.0ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myGoals.html.erb within layouts/application (410.5ms)
+Completed 200 OK in 414ms (Views: 412.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:04:44 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ibt/aDR8ASE4YeJmu9nYaZSXsptvEc5jGEuXjBv223fz8vvki3BEfg2Ad9l0yo8nOHaFoh28JHsMwlGKyqYIIg==", "learning_goal"=>{"goal_description"=>""}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (113.6ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myGoals.html.erb within layouts/application (357.8ms)
+Completed 200 OK in 363ms (Views: 360.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:05:40 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (114.1ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myGoals.html.erb within layouts/application (403.3ms)
+Completed 200 OK in 406ms (Views: 405.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:06:34 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (121.3ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (421.9ms)
+Completed 200 OK in 426ms (Views: 424.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:06:48 +0100
+  [1m[35m (37.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (16.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (724.6ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (1745.8ms)
+Completed 200 OK in 1759ms (Views: 1750.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:06:58 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T7X8sUGB4shfFL1tQhIX7gNRmsLdd6Aqk53zM2CB7WOd/Hg9/o2nl2r1KNKNAUCgr7Ct+6/aSjKHFDU1sdE+Ng==", "learning_goal"=>{"goal_description"=>""}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (114.0ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myGoals.html.erb within layouts/application (357.0ms)
+Completed 200 OK in 360ms (Views: 359.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:09:57 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (120.2ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (416.5ms)
+Completed 200 OK in 419ms (Views: 418.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:10:01 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DXd903ZnC7nTqLUIo+XMH901RtG3UJ6GYP6Ya0H9B2/fPvlfyWtO5uZJILds9ptRcdRx6MX9dJ50d15tkK3UOg==", "learning_goal"=>{"goal_description"=>""}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (145.4ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (428.5ms)
+Completed 200 OK in 433ms (Views: 431.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:32:14 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (131.0ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/myGoals.html.erb within layouts/application (470.1ms)
+Completed 200 OK in 473ms (Views: 472.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:32:38 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CyxvRRU3/kF6ThsBJsLqMaB7qdHIHERn8eCgahgnmtjZZevJqju7Hk+vjr7p0b1/DJqe6Lqxrn/laWZsyXdJjQ==", "learning_goal"=>{"topic"=>"Functional Programming", "description"=>"blue", "date"=>"04/04/18", "apps"=>"Kindle"}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (118.6ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myGoals.html.erb within layouts/application (411.9ms)
+Completed 200 OK in 415ms (Views: 414.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:34:12 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s5xFipFvfNqa7rxmV6TzROWFkyBCTHPPAhKXOhtx/nVh1cEGLmM5ha8PKdmYt6QKSWSkGTDhmdcWm1E8yiEtIA==", "learning_goal"=>{"topic"=>"Functional Programming", "description"=>"", "date"=>"", "apps"=>"Mail"}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (117.7ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (418.0ms)
+Completed 200 OK in 422ms (Views: 421.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:34:26 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nHfcs2uS2ac23XfG8aYBo/GlpJWwusiyYUna/Kkp8bJOPlg/1J6c+AM84nk+tVbtXUSTrMIXIqp1wBz6eHki5w==", "learning_goal"=>{"topic"=>"Functional Programming", "description"=>"", "date"=>"", "apps"=>"Mail"}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (122.1ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (432.2ms)
+Completed 200 OK in 435ms (Views: 434.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:35:21 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (122.9ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (434.5ms)
+Completed 200 OK in 437ms (Views: 436.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:35:35 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (138.4ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (444.9ms)
+Completed 200 OK in 449ms (Views: 447.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:44:52 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (107.9ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (434.8ms)
+Completed 200 OK in 437ms (Views: 437.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:46:45 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (136.8ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (464.5ms)
+Completed 200 OK in 467ms (Views: 466.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:47:13 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lxLAlPnkICA3ae7UeK/aCzrEoT+zECovJIGTavOIz95FW0QYRuhlfwKIe2u3vI1FliWWBsG9wDcwCFVsItgciw==", "learning_goal"=>{"topic"=>"Javascript", "description"=>"ayy lmao", "date"=>"04/04/18", "apps"=>["", "Safari", "Mail"]}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (124.4ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (411.9ms)
+Completed 200 OK in 415ms (Views: 414.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-02 23:51:41 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RyRPFtoX1twpOvnl3JGC5q5Nhj9FByXNJwjtOP4k3qOVbcuaZRuTgxzbbFoTgtWoAqyxBjeqz9UzgSs+L3QN9g==", "learning_goal"=>{"topic"=>"Financial Forecasting", "description"=>"Figure out the whole 'Economy' thing", "date"=>"04/04/18", "apps"=>["", "Whatsapp", "Youtube"]}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (120.2ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myGoals.html.erb within layouts/application (388.1ms)
+Completed 200 OK in 392ms (Views: 391.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-03 09:05:07 +0100
+  [1m[35m (27.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (780.5ms)
+  Rendered pages/_top_nav.html.erb (0.7ms)
+  Rendered pages/_side_nav.html.erb (0.6ms)
+  Rendered pages/myGoals.html.erb within layouts/application (1962.5ms)
+Completed 200 OK in 1975ms (Views: 1967.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-03 09:05:32 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"81Iq7PlFRGqp251doinY0/iaPnC6RRPOWo6iqnPfTHIhG65gRkkBNZw6COJtOo+dVHsJScjo+dZOB2Ssoo+fJw==", "learning_goal"=>{"topic"=>"Accounting", "description"=>"Do the thing", "date"=>"04/04/18", "apps"=>["", "Whatsapp", "Kindle"]}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (116.1ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myGoals.html.erb within layouts/application (402.8ms)
+Completed 200 OK in 407ms (Views: 406.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-03 09:07:13 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (122.7ms)
+  Rendered pages/_top_nav.html.erb (1.1ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myGoals.html.erb within layouts/application (432.2ms)
+Completed 200 OK in 435ms (Views: 434.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-03 09:07:26 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Osn/SB+RqWat23jnU1r+Vj+4QQQKgSpyOn2FwKJlYqLogHvEoJ3sOZg67VicSakYk1l2PXgswGou9EPGczWx9w==", "learning_goal"=>{"topic"=>"Financial Forecasting", "description"=>"Blard", "date"=>"04/04/18", "apps"=>["", "Mail", "Youtube"]}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+
+TypeError - no implicit conversion of String into Array:
+  app/controllers/pages_controller.rb:27:in `-'
+  app/controllers/pages_controller.rb:27:in `myGoals'
+
+Started POST "/__better_errors/58be6d26f057d539/variables" for 127.0.0.1 at 2018-04-03 09:07:26 +0100
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-03 09:08:16 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Osn/SB+RqWat23jnU1r+Vj+4QQQKgSpyOn2FwKJlYqLogHvEoJ3sOZg67VicSakYk1l2PXgswGou9EPGczWx9w==", "learning_goal"=>{"topic"=>"Financial Forecasting", "description"=>"Blard", "date"=>"04/04/18", "apps"=>["", "Mail", "Youtube"]}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (137.8ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myGoals.html.erb within layouts/application (467.7ms)
+Completed 200 OK in 471ms (Views: 470.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/myGoals" for 127.0.0.1 at 2018-04-03 12:55:43 +0100
+Processing by PagesController#myGoals as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"apqBs+ysd69w3rbeDNMZyB+siKUuB9Pr0fjbZLJW/xy40wU/U6Ay8EU/I2HDwE6Gs02/nFyqOfPFcR1iYwYsSQ==", "learning_goal"=>{"topic"=>"Accounting", "description"=>"thing", "date"=>"09/09/09", "apps"=>["", "Whatsapp", "Mail", "Kindle"]}, "commit"=>"Submit"}
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (107.9ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myGoals.html.erb within layouts/application (342.9ms)
+Completed 200 OK in 347ms (Views: 345.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-03 12:57:39 +0100
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (40.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (18.8ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+  [1m[36mLocationReport Load (13.1ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`device_id` = '1a7be15e-909b-80de-782a-1789889caade' ORDER BY `locations`.`ID` DESC LIMIT 5[0m
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (91.8ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myLocations.html.erb within layouts/application (303.3ms)
+Completed 200 OK in 500ms (Views: 305.8ms | ActiveRecord: 101.6ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-03 12:57:54 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (118.1ms)
+  Rendered pages/_top_nav.html.erb (0.3ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myGoals.html.erb within layouts/application (343.4ms)
+Completed 200 OK in 347ms (Views: 345.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-03 12:58:04 +0100
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+  [1m[36mLocationReport Load (0.6ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`device_id` = '1a7be15e-909b-80de-782a-1789889caade' ORDER BY `locations`.`ID` DESC LIMIT 5[0m
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (125.8ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myLocations.html.erb within layouts/application (397.4ms)
+Completed 200 OK in 410ms (Views: 401.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pages/myLocationsTwo.html" for 127.0.0.1 at 2018-04-03 12:58:16 +0100
+Processing by PagesController#myLocationsTwo as HTML
+  Rendering pages/myLocationsTwo.html.erb within layouts/application
+  Rendered pages/_header.html.erb (133.1ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLocationsTwo.html.erb within layouts/application (433.6ms)
+Completed 200 OK in 439ms (Views: 435.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocationsThree" for 127.0.0.1 at 2018-04-03 12:58:25 +0100
+Processing by PagesController#myLocationsThree as HTML
+  Rendering pages/myLocationsThree.html.erb within layouts/application
+  Rendered pages/_header.html.erb (115.2ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (1.0ms)
+  Rendered pages/myLocationsThree.html.erb within layouts/application (364.6ms)
+Completed 200 OK in 368ms (Views: 366.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-03 12:58:51 +0100
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+  [1m[36mLocationReport Load (0.9ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`device_id` = '1a7be15e-909b-80de-782a-1789889caade' ORDER BY `locations`.`ID` DESC LIMIT 5[0m
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (136.9ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (375.8ms)
+Completed 200 OK in 388ms (Views: 380.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/pages/myGoals" for 127.0.0.1 at 2018-04-03 12:58:56 +0100
+Processing by PagesController#myGoals as HTML
+  Rendering pages/myGoals.html.erb within layouts/application
+  Rendered pages/_header.html.erb (127.7ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myGoals.html.erb within layouts/application (386.7ms)
+Completed 200 OK in 394ms (Views: 392.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myLearning" for 127.0.0.1 at 2018-04-03 12:59:14 +0100
+Processing by PagesController#myLearning as HTML
+  Rendering pages/myLearning.html.erb within layouts/application
+  Rendered pages/_header.html.erb (139.6ms)
+  Rendered pages/_top_nav.html.erb (0.6ms)
+  Rendered pages/_side_nav.html.erb (0.5ms)
+  Rendered pages/myLearning.html.erb within layouts/application (499.1ms)
+Completed 200 OK in 556ms (Views: 501.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myAppUsage" for 127.0.0.1 at 2018-04-03 12:59:39 +0100
+Processing by PagesController#myAppUsage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  Rendering pages/myAppUsage.html.erb within layouts/application
+  Rendered pages/_header.html.erb (110.1ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myAppUsage.html.erb within layouts/application (164.8ms)
+Completed 200 OK in 206ms (Views: 168.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-03 12:59:50 +0100
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+  [1m[36mLocationReport Load (0.8ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`device_id` = '1a7be15e-909b-80de-782a-1789889caade' ORDER BY `locations`.`ID` DESC LIMIT 5[0m
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (127.1ms)
+  Rendered pages/_top_nav.html.erb (0.5ms)
+  Rendered pages/_side_nav.html.erb (0.4ms)
+  Rendered pages/myLocations.html.erb within layouts/application (354.0ms)
+Completed 200 OK in 362ms (Views: 356.8ms | ActiveRecord: 1.5ms)
+
+

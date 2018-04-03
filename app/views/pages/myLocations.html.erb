@@ -39,7 +39,7 @@
                   <div class="row">
 				<div class="col-lg-1"></div>
 					<div class="col-lg-10">
-						<!-- <form> -->
+                                                <!-- <form> -->
                         <form role="form">
                             <div class="form-group">
                                 <div class="table">
@@ -57,7 +57,7 @@
                                         </thead>
                                         <tbody>
                 <% @count = 1%>
-                <% LocationReport.where(device_id: @userdevice).find_each do |location| %>
+                <% @locts.each do |location| %>
                         <% @timestamp = Time.at(location.timestamp / 1000) %>
                         <tr>
                                 <th scope="row"><%= @count =%></th>

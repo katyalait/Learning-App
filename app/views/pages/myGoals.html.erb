@@ -69,6 +69,13 @@
                                             <td>31/03/18</td>
                                             <td>Youtube</td>
                                         </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><%= @testsubj %></td>
+                                            <td><%= @testdesc %></td>
+                                            <td><%= @testdate %></td>
+                                            <td><%= @testapps %></td>
+                                        </tr>
                                     </tbody>
                                 </table>
 
@@ -91,12 +98,23 @@
                             
                 		<div class="row">
                             <div class="col-lg-6">
-                              <%form_for() do: |f| %> <!-- wasn't sure what to put here -->
+                              <%= form_for(:learning_goal, url: pages_myGoals_path) do |f| %> <!-- wasn't sure what to put here -->
                                     <div class="form-group">
                                         <%= f.label :topic_choice%>
+                                        <%= f.select :topic, [
+                                                    ['Functional Programming','Functional Programming'],
+                                                    ['Accounting','Accounting'],
+                                                    ['Financial Forecasting','Financial Forecasting'],
+                                                    ['Creative Writing','Creative Writing'],
+                                                    ['Javascript','Javascript'],
+                                                    ['Java','Java'],
+                                                    ['Science','Science'],
+                                                    ['History','History']
+                                        ], {:prompt => "Choose One"}, {:class => 'form-control'}%>
 
 					<!-- select function here that chooses all the topics related to the user and displays them -->
-                                        <select class="form-control">
+                                        
+                                        <!-- <select class="form-control">
                                             <option>--Choose One--</option>
                                             <option>Functional Programming</option>
                                             <option>Accounting</option>
@@ -106,31 +124,42 @@
                                             <option>Java</option>
                                             <option>Science</option>
                                             <option>History</option>
-                                        </select>
+                                        </select> -->
                                     </div>
                                     <div class="form-group">
-                                        <%= f.label :goal_description%>
-                                         <%= f.text_field :goal_description, class: 'form-control', placeholder: 'Describe your goal' %>
+                                         <%= f.label :goal_description%>
+                                         <%= f.text_field :description, class: 'form-control', placeholder: 'Describe your goal' %>
                                     </div>
                                     <div class="form-group">
                                          <%= f.label :date_to_do_by%>
-                                         <%= f.text_field :goal_description, class: 'form-control', placeholder: 'dd/mm/yy' %>
-                                        <p class="help-block">E.G. 04/04/18</p>
+                                         <%= f.text_field :date, class: 'form-control', placeholder: 'dd/mm/yy' %>
+                                         <p class="help-block">E.G. 04/04/18</p>
                                     </div>
                                     <div class="form-group">
-                                         <%= f.label :application_to_use%>
-					<!-- selection function that produces all the apps a user uses'
-                                        <select multiple class="form-control">
+                                         <%= f.label :application_to_use %>
+                                         <%= f.select :apps, [
+                                                     ['Whatsapp','Whatsapp'],
+                                                     ['Safari','Safari'],
+                                                     ['Mail','Mail'],
+                                                     ['Youtube','Youtube'],
+                                                     ['Kindle','Kindle']
+                                         ], {}, {:multiple => true, :size => 5, :class => 'form-control'}%>
+                                         <p class="help-block">Hold CTRL to choose multiple</p>
+                                         <!-- selection function that produces all the apps a user uses' -->
+                                         <!--<select multiple class="form-control">
                                             <option>--Hold CTRL To Choose--</option>
                                             <option>Whatsapp</option>
                                             <option>Safari</option>
                                             <option>Mail</option>
                                             <option>Youtube</option>
                                             <option>Kindle</option>
-                                        </select>
+                                        </select>-->
                                     </div>
-				<%= f.submit "Log in", class: "btn btn-primary" %> <!--- onclick="location.href='myGoals2.html';"  IT NEEDS TO GO TO THIS PAGE-->
-                                         </form>
+                                    <%= f.submit "Submit", class: "btn btn-primary" %> 
+                                    <!--- onclick="location.href='myGoals2.html';"  IT NEEDS TO GO TO THIS PAGE-->
+                        <% end %>
+                        <%= @textinfo %>
+                        </form>
 							        </div>
                             
                             <!-- /.col-lg-6 (nested) -->

@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'pages/myLearningTwo'
 
   get 'pages/myGoals'
+  post 'pages/myGoals'
 
   get 'pages/weeklyOverview'
 
