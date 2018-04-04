@@ -47,7 +47,17 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                    <% @count = 1%>
+                                    <% @goals.each do |goal| %>
+                                    <tr>
+                                                <td><%= @count %></td>
+                                                <td><%= Topic.find(goal.topic_id).topic_name%></td>
+                                                <td><%= goal.goal %></td>
+                                                <td><%= Time.at(goal.end_date / 1000).strftime("%d/%m/%y")%></td>
+                                                <td><%= goal.apps %></td>
+                                    </tr>
+                                    <% end %>
+                                        <!--<tr>
                                             <td>1</td>
                                             <td>Science</td>
                                             <td>Organic Chemistry revision</td>
@@ -75,7 +85,7 @@
                                             <td><%= @testdesc %></td>
                                             <td><%= @testdate %></td>
                                             <td><%= @testapps %></td>
-                                        </tr>
+                                        </tr>-->
                                     </tbody>
                                 </table>
 
@@ -101,17 +111,7 @@
                               <%= form_for(:learning_goal, url: pages_myGoals_path) do |f| %> <!-- wasn't sure what to put here -->
                                     <div class="form-group">
                                         <%= f.label :topic_choice%>
-                                        <%= f.select :topic, [
-                                                    ['Functional Programming','Functional Programming'],
-                                                    ['Accounting','Accounting'],
-                                                    ['Financial Forecasting','Financial Forecasting'],
-                                                    ['Creative Writing','Creative Writing'],
-                                                    ['Javascript','Javascript'],
-                                                    ['Java','Java'],
-                                                    ['Science','Science'],
-                                                    ['History','History']
-                                        ], {:prompt => "Choose One"}, {:class => 'form-control'}%>
-
+                                        <%= f.select :topic, @topiclist, {:prompt => "Choose One"}, {:class => 'form-control'}%>
 					<!-- select function here that chooses all the topics related to the user and displays them -->
                                         
                                         <!-- <select class="form-control">
@@ -137,13 +137,7 @@
                                     </div>
                                     <div class="form-group">
                                          <%= f.label :application_to_use %>
-                                         <%= f.select :apps, [
-                                                     ['Whatsapp','Whatsapp'],
-                                                     ['Safari','Safari'],
-                                                     ['Mail','Mail'],
-                                                     ['Youtube','Youtube'],
-                                                     ['Kindle','Kindle']
-                                         ], {}, {:multiple => true, :size => 5, :class => 'form-control'}%>
+                                         <%= f.select :apps, @applist , {}, {:multiple => true, :size => 5, :class => 'form-control'}%>
                                          <p class="help-block">Hold CTRL to choose multiple</p>
                                          <!-- selection function that produces all the apps a user uses' -->
                                          <!--<select multiple class="form-control">
