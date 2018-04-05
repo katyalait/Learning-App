@@ -20,4 +20,6 @@
 //= require jquery_ujs
 //= require sb-admin-2
 //= require cable
+//= require underscore.js
+//= require gmaps/google
 //= require_tree .

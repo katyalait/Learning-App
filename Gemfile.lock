@@ -88,6 +88,7 @@ GEM
       railties (>= 3.2, < 5.2)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    gmaps4rails (2.1.2)
     high_voltage (3.0.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -233,6 +234,7 @@ DEPENDENCIES
   factory_girl_rails
   faker
   font-awesome-rails (~> 4.7, >= 4.7.0.3)
+  gmaps4rails
   high_voltage
   jbuilder (~> 2.5)
   jquery-rails

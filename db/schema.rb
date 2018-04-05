@@ -85,9 +85,6 @@ ActiveRecord::Schema.define(version: 20180403145333) do
     t.string "description", limit: 120
   end
 
-  create_table "used_locations", primary_key: "ID", id: :integer, default: nil, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-  end
-
   create_table "users", primary_key: "ID", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.integer "aware_device_id", null: false
     t.string "Username", limit: 20, null: false
