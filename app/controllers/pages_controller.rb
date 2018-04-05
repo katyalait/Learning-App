@@ -55,15 +55,48 @@ class PagesController < ApplicationController
 
   def myLocationsThree
     current_user
-    if session[:locations] != nil
-      @test = session[:locations]
+    @userdevice = Device.find_by(_id: @current_user.aware_device_id).device_id
+    @test = ""
+    if session[:locations] != nil && session[:effectiveness] != nil
+      session[:locations].each do |loc|
+        location = LocationReport.find(loc[0].to_i)
+        entrytime = Time.at(location.timestamp.to_i / 1000)
+        arrived = Time.parse(loc[1]["arrived"])
+        departed = Time.parse(loc[1]["departed"])
+        fromtime = Time.new(entrytime.year, entrytime.month, entrytime.day, arrived.hour, arrived.min)
+        totime = Time.new(entrytime.year, entrytime.month, entrytime.day, departed.hour, departed.min)
+        UsageReport.where(device_id: @userdevice).where(timestamp: (fromtime.to_i * 1000)..(totime.to_i * 1000)).each do |apprep|
+          new_context = Context.new
+          new_context.user_id = @userdevice
+          #new_context.topic_id
+          new_context.start_time = fromtime.to_i * 1000
+          new_context.end_time = totime.to_i * 1000
+          new_context.latitude = location.double_latitude
+          new_context.longitude = location.double_longitude
+          new_context.app_id = App.find_by(package_name: apprep.package_name).ID
+          #new_context.topics
+          new_context.percentage = session[:effectiveness][loc[0]]["effect"]
+          new_context.description = loc[1]["description"]
+          new_context.duration = (totime.to_i * 1000) - (fromtime.to_i * 1000)
+          new_context.save
+        end
+        UsedLocation.create(ID: loc[0].to_i)
+      end
+      session[:locations] = nil
+      session[:effectiveness] = nil
     end
+    render 'myLocationsThree'
   end
 
   def myLocationsTwo
     current_user
     if session[:locations] != nil
       @given = session[:locations]
+    end
+    if params[:effect] != nil
+      session[:effectiveness] = nil
+      session[:effectiveness] = params[:effect]
+      redirect_to pages_myLocationsThree_url
     end
   end 
 
