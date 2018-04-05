@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Summary Statistics</title>
+<%= stylesheet_link_tag    'application', media: 'all'%> 
+<%= javascript_include_tag 'application' %> 
+<%= javascript_include_tag 'jquery' %>
+
+<%= javascript_include_tag 'jquery.flot' %>
+<%= javascript_include_tag 'jquery.flot.pie' %>
+<%= javascript_include_tag 'jquery.flot.resize' %> 
+<%= javascript_include_tag 'jquery.flot.time' %> 
+<%= javascript_include_tag 'jquery.flot.tooltip' %> 
+
+<%= javascript_include_tag 'bootstrap' %>
+<%= javascript_include_tag 'metisMenu' %>
+<%= javascript_include_tag 'scripts' %> 
+<%= javascript_include_tag 'sb-admin-2' %>
+<%= javascript_include_tag 'raphael' %> 
+<%= javascript_include_tag 'morris' %> 
+<%= javascript_include_tag 'excanvas' %>
+<%= javascript_include_tag 'myOwn' %> 
+</head>
+<%= render @researcher || "top_nav" %>
+<%= render @researcher || "side_nav" %>
+<div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Usage & Effectiveness</h1>
+            </div>
+        </div>
+		<!-- Pie Chart -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Number of Users
+                    </div>
+                    <div class="panel-body">
+                        <div class="flot-chart">
+                            <div class="flot-chart-content" id="flot-pie-chart-appOverview"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<!-- Bar Chart -->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Average Effectiveness 
+                    </div>
+                    <div class="panel-body">
+                        <div class="flot-chart">
+                            <div class="flot-chart-content" id="flot-bar-chart-appOverview"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+</body>
+</html>
