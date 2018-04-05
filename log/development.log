@@ -7988,3 +7988,894 @@ Mysql2::Error - Table 'fardemo_development.used_locations' doesn't exist:
   app/controllers/pages_controller.rb:72:in `myLocations'
 
 Started POST "/__better_errors/fa03a09e2199954b/variables" for 127.0.0.1 at 2018-04-05 11:41:35 +0100
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-05 12:10:59 +0100
+  [1m[35m (3.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 15.2ms)
+
+
+
+Mysql2::Error - Table 'fardemo_development.used_locations' doesn't exist:
+  app/controllers/pages_controller.rb:73:in `myLocations'
+
+Started POST "/__better_errors/cb8c3a29ef9faa78/variables" for 127.0.0.1 at 2018-04-05 12:11:00 +0100
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT GET_LOCK('8805950764467094035', 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('8805950764467094035')[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-05 12:18:11 +0100
+  [1m[35m (3.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 18.1ms)
+
+
+
+Mysql2::Error - Table 'fardemo_development.used_locations' doesn't exist:
+  app/controllers/pages_controller.rb:73:in `myLocations'
+
+Started POST "/__better_errors/d1f02f2cfe689aa7/variables" for 127.0.0.1 at 2018-04-05 12:18:12 +0100
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('8805950764467094035', 0)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('8805950764467094035')[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('8805950764467094035', 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('8805950764467094035')[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-05 12:34:21 +0100
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (1.7ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+Completed 500 Internal Server Error in 377ms (ActiveRecord: 16.3ms)
+
+
+
+Mysql2::Error - Table 'fardemo_development.used_locations' doesn't exist:
+  app/controllers/pages_controller.rb:73:in `myLocations'
+
+Started POST "/__better_errors/da840f28a9fac5ad/variables" for 127.0.0.1 at 2018-04-05 12:34:22 +0100
+Started GET "/pages/myLocations" for 127.0.0.1 at 2018-04-05 13:04:53 +0100
+  [1m[35m (1.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#myLocations as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`ID` = 63 LIMIT 1[0m
+  [1m[36mDevice Load (0.6ms)[0m  [1m[34mSELECT  `aware_device`.* FROM `aware_device` WHERE `aware_device`.`_id` = 9 LIMIT 1[0m
+  [1m[36mLocationReport Load (4.4ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`device_id` = '1a7be15e-909b-80de-782a-1789889caade' AND (`locations`.`ID` NOT IN (SELECT `used_locations`.`ID` FROM `used_locations`)) ORDER BY `locations`.`ID` DESC LIMIT 5[0m
+  Rendering pages/myLocations.html.erb within layouts/application
+  Rendered pages/_header.html.erb (772.1ms)
+  Rendered pages/_top_nav.html.erb (0.4ms)
+  Rendered pages/_side_nav.html.erb (0.3ms)
+  Rendered pages/myLocations.html.erb within layouts/application (1322.4ms)
+Completed 200 OK in 1525ms (Views: 1327.2ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-04-05 15:05:55 +0100
+  [1m[35m (18.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.5ms)
+  Rendered researcher/_side_nav.html.erb (0.6ms)
+  Rendered researcher/userApps.html.erb within layouts/application (2150.7ms)
+Completed 200 OK in 2183ms (Views: 2167.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:06:10 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/overview.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-04-05 15:06:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/userTables" for 127.0.0.1 at 2018-04-05 15:06:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/userTables"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/userTable" for 127.0.0.1 at 2018-04-05 15:06:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/userTable"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/weeklyOverview" for 127.0.0.1 at 2018-04-05 15:06:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/weeklyOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-04-05 15:07:03 +0100
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (1.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (910.5ms)
+Completed 200 OK in 923ms (Views: 915.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-04-05 15:07:13 +0100
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (442.0ms)
+Completed 200 OK in 445ms (Views: 443.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-04-05 15:07:15 +0100
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (452.8ms)
+Completed 200 OK in 457ms (Views: 455.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-04-05 15:07:18 +0100
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/usersTable.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-04-05 15:07:24 +0100
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (551.7ms)
+Completed 200 OK in 555ms (Views: 554.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-04-05 15:07:27 +0100
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.0ms)
+  Rendered researcher/_side_nav.html.erb (0.6ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (529.7ms)
+Completed 200 OK in 533ms (Views: 531.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-04-05 15:07:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-04-05 15:12:06 +0100
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/usersTable.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersApps" for 127.0.0.1 at 2018-04-05 15:12:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/usersApps"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-04-05 15:12:24 +0100
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (1111.3ms)
+Completed 200 OK in 1115ms (Views: 1113.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview.html" for 127.0.0.1 at 2018-04-05 15:12:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview.html"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/usageOverview.html" for 127.0.0.1 at 2018-04-05 15:12:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/usageOverview.html"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/userApps.html" for 127.0.0.1 at 2018-04-05 15:12:40 +0100
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (802.9ms)
+Completed 200 OK in 806ms (Views: 805.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userTable.html" for 127.0.0.1 at 2018-04-05 15:12:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/userTable.html"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicOverview.html" for 127.0.0.1 at 2018-04-05 15:12:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/topicOverview.html"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-04-05 15:15:13 +0100
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.5ms)
+  Rendered researcher/userApps.html.erb within layouts/application (934.1ms)
+Completed 200 OK in 942ms (Views: 940.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-04-05 15:20:13 +0100
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/usersTable.html.erb within layouts/application (963.7ms)
+Completed 200 OK in 981ms (Views: 978.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-04-05 15:21:07 +0100
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.9ms)
+  Rendered researcher/_side_nav.html.erb (2.0ms)
+  Rendered researcher/usersTable.html.erb within layouts/application (1036.4ms)
+Completed 200 OK in 1051ms (Views: 1048.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-04-05 15:21:39 +0100
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/usersTable.html.erb within layouts/application (734.3ms)
+Completed 200 OK in 740ms (Views: 737.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usageOverview.html" for 127.0.0.1 at 2018-04-05 15:21:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/usageOverview.html"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/overview.html" for 127.0.0.1 at 2018-04-05 15:22:09 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/overview.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview.html" for 127.0.0.1 at 2018-04-05 15:30:14 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.5ms)
+  Rendered researcher/_side_nav.html.erb (0.9ms)
+  Rendered researcher/overview.html.erb within layouts/application (918.0ms)
+Completed 200 OK in 923ms (Views: 921.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:30:18 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.9ms)
+  Rendered researcher/_side_nav.html.erb (1.1ms)
+  Rendered researcher/overview.html.erb within layouts/application (867.8ms)
+Completed 200 OK in 893ms (Views: 889.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:31:05 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/overview.html.erb within layouts/application (911.7ms)
+Completed 200 OK in 927ms (Views: 923.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:32:14 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (3.2ms)
+  Rendered researcher/_side_nav.html.erb (5.0ms)
+  Rendered researcher/overview.html.erb within layouts/application (1117.5ms)
+Completed 200 OK in 1124ms (Views: 1122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:35:17 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.5ms)
+  Rendered researcher/_side_nav.html.erb (1.0ms)
+  Rendered researcher/overview.html.erb within layouts/application (1228.6ms)
+Completed 200 OK in 1233ms (Views: 1232.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:35:37 +0100
+  [1m[35m (2.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (1.6ms)
+  Rendered researcher/overview.html.erb within layouts/application (3139.2ms)
+Completed 200 OK in 3166ms (Views: 3152.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:36:45 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/overview.html.erb within layouts/application (886.0ms)
+Completed 200 OK in 905ms (Views: 903.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:38:59 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/overview.html.erb within layouts/application (789.9ms)
+Completed 200 OK in 793ms (Views: 791.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:39:17 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/overview.html.erb within layouts/application (1391.9ms)
+Completed 200 OK in 1416ms (Views: 1411.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:42:18 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.5ms)
+  Rendered researcher/_side_nav.html.erb (1.6ms)
+  Rendered researcher/overview.html.erb within layouts/application (928.5ms)
+Completed 200 OK in 939ms (Views: 935.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-04-05 15:42:33 +0100
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.2ms)
+  Rendered researcher/userApps.html.erb within layouts/application (455.8ms)
+Completed 200 OK in 459ms (Views: 457.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-04-05 15:42:36 +0100
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (2.1ms)
+  Rendered researcher/_side_nav.html.erb (3.5ms)
+  Rendered researcher/userApps.html.erb within layouts/application (1042.8ms)
+Completed 200 OK in 1049ms (Views: 1045.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-04-05 15:42:41 +0100
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.1ms)
+  Rendered researcher/_side_nav.html.erb (1.2ms)
+  Rendered researcher/usersTable.html.erb within layouts/application (701.6ms)
+Completed 200 OK in 704ms (Views: 703.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-04-05 15:42:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-04-05 15:43:34 +0100
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/userApps.html.erb within layouts/application (1013.7ms)
+Completed 200 OK in 1021ms (Views: 1019.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-04-05 15:43:38 +0100
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.9ms)
+  Rendered researcher/_side_nav.html.erb (1.5ms)
+  Rendered researcher/usersTable.html.erb within layouts/application (643.5ms)
+Completed 200 OK in 647ms (Views: 646.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/appOverview" for 127.0.0.1 at 2018-04-05 15:43:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/appOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/usageOverview" for 127.0.0.1 at 2018-04-05 15:48:27 +0100
+  [1m[35m (2.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ResearcherController#usageOverview as HTML
+  Rendering researcher/usageOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.5ms)
+  Rendered researcher/_side_nav.html.erb (0.7ms)
+  Rendered researcher/usageOverview.html.erb within layouts/application (1747.4ms)
+Completed 200 OK in 1782ms (Views: 1767.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:48:41 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (3.7ms)
+  Rendered researcher/_side_nav.html.erb (1.6ms)
+  Rendered researcher/overview.html.erb within layouts/application (765.5ms)
+Completed 200 OK in 772ms (Views: 770.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-04-05 15:48:45 +0100
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.6ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/usersTable.html.erb within layouts/application (557.3ms)
+Completed 200 OK in 561ms (Views: 559.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-04-05 15:48:47 +0100
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (478.9ms)
+Completed 200 OK in 489ms (Views: 486.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-04-05 15:48:49 +0100
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.7ms)
+  Rendered researcher/_side_nav.html.erb (1.0ms)
+  Rendered researcher/userApps.html.erb within layouts/application (837.9ms)
+Completed 200 OK in 844ms (Views: 840.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/topicOverview" for 127.0.0.1 at 2018-04-05 15:48:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/researcher/topicOverview"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/researcher/topicsOverview" for 127.0.0.1 at 2018-04-05 15:49:40 +0100
+Processing by ResearcherController#topicsOverview as HTML
+  Rendering researcher/topicsOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.0ms)
+  Rendered researcher/_side_nav.html.erb (1.0ms)
+  Rendered researcher/topicsOverview.html.erb within layouts/application (650.1ms)
+Completed 200 OK in 655ms (Views: 654.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/userApps" for 127.0.0.1 at 2018-04-05 15:49:48 +0100
+Processing by ResearcherController#userApps as HTML
+  Rendering researcher/userApps.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/userApps.html.erb within layouts/application (438.8ms)
+Completed 200 OK in 442ms (Views: 440.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usersTable" for 127.0.0.1 at 2018-04-05 15:49:49 +0100
+Processing by ResearcherController#usersTable as HTML
+  Rendering researcher/usersTable.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.4ms)
+  Rendered researcher/_side_nav.html.erb (0.4ms)
+  Rendered researcher/usersTable.html.erb within layouts/application (497.5ms)
+Completed 200 OK in 501ms (Views: 500.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:49:50 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.2ms)
+  Rendered researcher/overview.html.erb within layouts/application (454.6ms)
+Completed 200 OK in 458ms (Views: 456.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/overview" for 127.0.0.1 at 2018-04-05 15:49:53 +0100
+Processing by ResearcherController#overview as HTML
+  Rendering researcher/overview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (1.0ms)
+  Rendered researcher/_side_nav.html.erb (1.4ms)
+  Rendered researcher/overview.html.erb within layouts/application (904.4ms)
+Completed 200 OK in 912ms (Views: 908.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/researcher/usageOverview" for 127.0.0.1 at 2018-04-05 15:49:58 +0100
+Processing by ResearcherController#usageOverview as HTML
+  Rendering researcher/usageOverview.html.erb within layouts/application
+  Rendered researcher/_top_nav.html.erb (0.3ms)
+  Rendered researcher/_side_nav.html.erb (0.3ms)
+  Rendered researcher/usageOverview.html.erb within layouts/application (525.4ms)
+Completed 200 OK in 533ms (Views: 531.9ms | ActiveRecord: 0.0ms)
+
+

@@ -113,3 +113,89 @@ $(function() {
     
 });
 // JavaScript source code
+
+//---------------------------------------------------------------------------
+//Flot Pie Chart
+$(function() {
+
+    var data = [{
+        label: "Facebook",
+        data: 1000
+    }, {
+        label: "Snapchat",
+        data: 800
+    }, {
+        label: "Twitter",
+        data: 500
+    }, {
+        label: "Safari",
+        data: 350
+    }, {
+        label: "Clock",
+        data: 750
+    }];
+
+    var plotObj = $.plot($("#flot-pie-chart-appOverview"), data, {
+        series: {
+            pie: {
+                show: true
+            }
+        },
+        grid: {
+            hoverable: true
+        },
+        tooltip: true,
+        tooltipOpts: {
+            content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
+            shifts: {
+                x: 20,
+                y: 0
+            },
+            defaultTheme: false
+        }
+    });
+
+});
+
+//Flot Bar Chart
+
+$(function() {
+
+    var barOptions = {
+        series: {
+            bars: {
+                show: true,
+                barWidth: 43200000
+            }
+        },
+        xaxis: {
+            mode: "time",
+            timeformat: "%m/%d",
+            minTickSize: [1, "day"]
+        },
+        grid: {
+            hoverable: true
+        },
+        legend: {
+            show: true
+        },
+        //tooltip: true,
+        //tooltipOpts: {
+          //  content: "x: %x, y: %y"
+        //}
+    };
+    var barData = {
+        label: "Hours",
+        data: [
+            [1518269887000, 1.5],
+            [1518442687000, 0.4],
+            [1518529087000, 0.25],
+            [1518615487000, 1],
+            [1518701887000, 0.5],
+            [1518788287000, 0.75]
+        ]
+    };
+    $.plot($("#flot-bar-chart-appOverview"), [barData], barOptions);
+
+});
+//---------------------------------------------------------------------------
