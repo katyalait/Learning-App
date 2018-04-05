@@ -36,7 +36,6 @@ class PagesController < ApplicationController
     end
 
     if params[:learning_goal] != nil
-      @textinfo = "Received submission"
       entry_new = LearningGoal.new
       entry_new.user_id = Device.find_by(_id: @current_user.aware_device_id).device_id
       entry_new.topic_id = 5
@@ -45,13 +44,8 @@ class PagesController < ApplicationController
       entry_new.end_date = Date.strptime(params[:learning_goal][:date],"%d/%m/%y").to_time.to_i * 1000
       entry_new.completed = false
       entry_new.apps = (params[:learning_goal][:apps] - [""]).join(",")
-#      entry_new.save
-      @testsubj = params[:learning_goal][:topic]
-      @testdesc = params[:learning_goal][:description]
-      @testdate = params[:learning_goal][:date]
-      @testapps = (params[:learning_goal][:apps] - [""]).join(",")
+      entry_new.save
     else
-      @textinfo = "no submission"
     end
     render 'myGoals'
   end
@@ -60,16 +54,29 @@ class PagesController < ApplicationController
   end
 
   def myLocationsThree
+    current_user
+    if session[:locations] != nil
+      @test = session[:locations]
+    end
   end
 
   def myLocationsTwo
-    @dats = params
+    current_user
+    if session[:locations] != nil
+      @given = session[:locations]
+    end
   end 
 
   def myLocations
     current_user
     @userdevice = Device.find_by(_id: @current_user.aware_device_id).device_id
     @locts = LocationReport.where(device_id: @userdevice).where.not(ID: UsedLocation.select(:ID)).last(5)
+    if params[:context_loc] != nil
+      session[:locations] = nil
+      session[:locations] = params[:context_loc]
+      redirect_to pages_myLocationsTwo_url
+    else
+    end
   end
 
   def top_nav

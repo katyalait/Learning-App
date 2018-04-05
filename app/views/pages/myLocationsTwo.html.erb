@@ -27,7 +27,6 @@
                 </div>
                 <div class="col-lg-1"></div>
                 <form class="col-lg-10">
-                      <%= @dats =%>
                     <!-- <form> -->
                     <form role="form">
                         <div class="form-group">
@@ -37,13 +36,28 @@
                                         <tr>
                                             <th scope="col"></th>
                                             <th scope="col">Visit</th>
-                                            <th scope="col">Date</th>
+                                            <th scope="col">Date and Time</th>
                                             <th scope="col">Effectiveness</th>
                                             <th scope="col"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                          <% @count = 1 %>
+                                          <%= form_for :effect do |f| %>
+                              <% @given.each do |report| %>
+                                    <tr>
+                                    <th scope="row"><%= @count %></th>
+                                    <td><p><%= report[1]["purpose"] %></p></td>
+                                    <td><%= Time.at(LocationReport.find(report[0].to_i).timestamp / 1000).strftime("%d/%m/%Y") %> | <%= report[1]["arrived"] %> - <%= report[1]["departed"] %></td>
+                                    <%= f.fields_for report[0] do |line| %>
+                                          <td><%= line.range_field "effect", type: 'range', class: 'form-control slider', min: 0, max: 100, step: 1%></td>
+                                          <!--<td><input class="form-control slider" type="range" min="0" max="100" id="myRange" value="50"></td>-->
+                                    <% end %>      
+                                    <td><span id="demo<%= @count %>"></span></td>
+                                    </tr>
+                              <% @count += 1%>
+                              <% end %>
+                                        <!--<tr>
                                             <th scope="row">1</th>
                                             <td>
                                                 <p>Coffee</p>
@@ -94,7 +108,7 @@
 
                                             <td><input class="form-control slider" type="range" min="0" max="100" id="myRange5" 																									value="50"> </td>
                                             <td><span id="demo5"></span></td>
-                                        </tr>
+                                        </tr>-->
                                     </tbody>
                                 </table>
                             </div>
@@ -102,8 +116,10 @@
                         <div class="row">
                             <div class="col-lg-4"></div>
                             <div class="col-lg-3">
-                                <button type="button" onclick="location.href='myLocationsThree';" class="btn btn-outline btn-primary 																				btn-lg btn-block addTopicButton">
-                                Submit</button>
+                                  <%= f.submit "Submit", class: "btn btn-outline btn-primary btn-lg btn-block addTopicButton"%>
+                                <!--<button type="button" onclick="location.href='myLocationsThree';" class="btn btn-outline btn-primary 																				btn-lg btn-block addTopicButton">
+                                      Submit</button>-->
+                          <% end %>
                             </div>
                         </div>
                     </form>

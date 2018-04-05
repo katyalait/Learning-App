@@ -56,32 +56,41 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                <% @count = 1%>
-                <% @locts.each do |location| %>
+                                                <% @count = 1%>
+                                                <%= form_for(:context_loc) do |f| %>
+                                                        <% @locts.each do |location| %>
+                                                                <%= f.fields_for location.ID.to_s do |line| %>
                         <% @timestamp = Time.at(location.timestamp / 1000) %>
                         <tr>
                                 <th scope="row"><%= @count =%></th>
-                                                <td>
-                                                    <select class="form-control" id="loc1">
+                                <td><%= line.select "purpose", 
+                                        [["Coffee","Coffee"],["Study","Study"],["Entertainment","Entertainment"]],
+                                        {:prompt => "Select One"},{:class => 'form-control'}%>
+
+                                                    <!--<select class="form-control" id="loc1">
                                                         <option>Select One</option>
                                                         <option>Coffee</option>
                                                         <option>Study</option>
                                                         <option>Entertainment</option>
-                                                    </select>
+                                                    </select> -->
                                                 </td>
                                                 <td><%= @timestamp.strftime("%d/%m/%Y") =%></td>
                                                 <td><%= @timestamp.strftime("%H:%M")=%></td>
-                                                <td class="time-column">
+                                                <td><%= line.time_field "arrived", class: 'form-control', placeholder: 'hh:mm'%></td>
+                                                <td><%= line.time_field "departed", class: 'form-control', placeholder: 'hh:mm'%></td>
+                                                <td><%= line.text_field "description", class: 'form-control' %></td>
+                                                <!--<td class="time-column">
                                                     <input class="form-control" placeholder="hh:mm">
 
                                                 </td>
                                                 <td class="time-column">
                                                     <input class="form-control" placeholder="hh:mm">
                                                 </td>
-                                                <td><input class="form-control input-sm" id="inputsm<%= @count =%>" type="text"></td>
+                                                <td><input class="form-control input-sm" id="inputsm<%= @count =%>" type="text"></td> -->
                                             </tr> 
-                                <% @count += 1%>
-                <% end %> 
+                                            <% @count += 1%>
+                                    <% end %>
+                                    <% end %>
 <!--                                            <tr>
                                                 <th scope="row">1</th>
                                                 <td>
@@ -190,8 +199,8 @@
                             <div class="row">
                                 <div class="col-lg-4"></div>
                                 <div class="col-lg-3">
-                                    <button type="button" onclick="location.href='myLocationsTwo.html';" class="btn btn-outline   
-				btn-primary btn-lg btn-block addTopicButton">Submit</button>
+                                        <%= f.submit "Submit", class: "btn btn-outline btn-primary btn-lg btn-block addTopicButton" %>
+                            <% end %>
                                 </div>
                             </div>
                             </form>

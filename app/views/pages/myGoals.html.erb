@@ -78,13 +78,6 @@
                                             <td>Recursive Functions</td>
                                             <td>31/03/18</td>
                                             <td>Youtube</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td><%= @testsubj %></td>
-                                            <td><%= @testdesc %></td>
-                                            <td><%= @testdate %></td>
-                                            <td><%= @testapps %></td>
                                         </tr>-->
                                     </tbody>
                                 </table>
@@ -108,7 +101,7 @@
                             
                 		<div class="row">
                             <div class="col-lg-6">
-                              <%= form_for(:learning_goal, url: pages_myGoals_path) do |f| %> <!-- wasn't sure what to put here -->
+                              <%= form_for :learning_goal do |f| %> <!-- wasn't sure what to put here -->
                                     <div class="form-group">
                                         <%= f.label :topic_choice%>
                                         <%= f.select :topic, @topiclist, {:prompt => "Choose One"}, {:class => 'form-control'}%>
@@ -152,7 +145,6 @@
                                     <%= f.submit "Submit", class: "btn btn-primary" %> 
                                     <!--- onclick="location.href='myGoals2.html';"  IT NEEDS TO GO TO THIS PAGE-->
                         <% end %>
-                        <%= @textinfo %>
                         </form>
 							        </div>
                             

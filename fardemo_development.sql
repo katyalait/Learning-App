@@ -44,6 +44,32 @@ INSERT INTO `applications_foreground` VALUES (115,1506903342462,'9aa69c40-b555-4
 UNLOCK TABLES;
 
 --
+-- Table structure for table `ar_internal_metadata`
+--
+
+DROP TABLE IF EXISTS `ar_internal_metadata`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ar_internal_metadata` (
+  `key` varchar(255) NOT NULL,
+  `value` varchar(255) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`key`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ar_internal_metadata`
+--
+
+LOCK TABLES `ar_internal_metadata` WRITE;
+/*!40000 ALTER TABLE `ar_internal_metadata` DISABLE KEYS */;
+INSERT INTO `ar_internal_metadata` VALUES ('environment','development','2018-03-20 17:29:11','2018-03-20 17:29:11');
+/*!40000 ALTER TABLE `ar_internal_metadata` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `aware_device`
 --
 
@@ -156,7 +182,7 @@ CREATE TABLE `learning_goals` (
   `completed` tinyint(1) DEFAULT NULL,
   `apps` varchar(150) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -165,6 +191,7 @@ CREATE TABLE `learning_goals` (
 
 LOCK TABLES `learning_goals` WRITE;
 /*!40000 ALTER TABLE `learning_goals` DISABLE KEYS */;
+INSERT INTO `learning_goals` VALUES (1,'1a7be15e-909b-80de-782a-1789889caade',5,'Finishing this project',1522762313000,1522710000000,0,'Mail,Youtube');
 /*!40000 ALTER TABLE `learning_goals` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -201,6 +228,29 @@ INSERT INTO `locations` VALUES (198,1506964108144,'9aa69c40-b555-4424-b616-8be8c
 UNLOCK TABLES;
 
 --
+-- Table structure for table `schema_migrations`
+--
+
+DROP TABLE IF EXISTS `schema_migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `schema_migrations` (
+  `version` varchar(255) NOT NULL,
+  PRIMARY KEY (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `schema_migrations`
+--
+
+LOCK TABLES `schema_migrations` WRITE;
+/*!40000 ALTER TABLE `schema_migrations` DISABLE KEYS */;
+INSERT INTO `schema_migrations` VALUES ('20180320172502'),('20180320173103'),('20180320173221'),('20180320173608'),('20180320173810'),('20180320174003'),('20180320174207'),('20180320174344'),('20180320174448'),('20180403145333');
+/*!40000 ALTER TABLE `schema_migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `topic_list`
 --
 
@@ -213,7 +263,7 @@ CREATE TABLE `topic_list` (
   `parent_topic` int(10) DEFAULT NULL,
   `description` varchar(120) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -222,8 +272,30 @@ CREATE TABLE `topic_list` (
 
 LOCK TABLES `topic_list` WRITE;
 /*!40000 ALTER TABLE `topic_list` DISABLE KEYS */;
-INSERT INTO `topic_list` VALUES (1,'Computer Science',-1,'Coding and stuff'),(2,'Linguistics',-1,'Languages and Language Accessories'),(3,'Philosophy',-1,'Studying everything, including the concept of studying'),(4,'Law',-1,'Laws, Contracts, Obligations, etc.'),(5,'Algorithms',1,'Processes and how to make them go faster'),(6,'Data Structures',1,'Figuring out how computers do data');
+INSERT INTO `topic_list` VALUES (1,'Computer Science',-1,'Coding and stuff'),(2,'Linguistics',-1,'Languages and Language Accessories'),(3,'Philosophy',-1,'Studying everything, including the concept of studying'),(4,'Law',-1,'Laws, Contracts, Obligations, etc.'),(5,'Algorithms',1,'Processes and how to make them go faster'),(6,'Data Structures',1,'Figuring out how computers do data'),(7,'Crochet',-1,NULL),(8,'Accounting',-1,NULL),(9,'Javascript',1,NULL),(10,'Python',1,NULL),(11,'Line Drawing',-1,NULL),(12,'Golf',-1,NULL),(13,'Stock Analysis',-1,NULL),(14,'Statistical Analysis',-1,NULL),(15,'French Grammar',-1,NULL),(16,'Basic Spanish',-1,NULL),(17,'Creative Writing',-1,NULL),(18,'Letter Writing',-1,NULL),(19,'Video Editing',-1,NULL),(20,'Photoshop',-1,NULL),(21,'Sewing',-1,NULL),(22,'Knitting',-1,NULL),(23,'Music Editing',-1,NULL),(24,'Yoga',-1,NULL),(25,'Strength Training',-1,NULL);
 /*!40000 ALTER TABLE `topic_list` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `used_locations`
+--
+
+DROP TABLE IF EXISTS `used_locations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `used_locations` (
+  `ID` int(10) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `used_locations`
+--
+
+LOCK TABLES `used_locations` WRITE;
+/*!40000 ALTER TABLE `used_locations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `used_locations` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -249,7 +321,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (6,0,'test','Participant','$2y$10$62W1KdCwiFTRSeEWY9JLxe83RSSmGEbK6fTqTEMIyB.8g2lEQowIu'),(55,1,'demo','Participant','$2y$10$CHr8DY8l.f8YLzGecQsD7OLf.ZodxSytLNqKgtRyezvLgrsngUzcO'),(56,2,'shaun','Participant','-'),(57,3,'james','Participant','-'),(58,4,'janet','Participant','-'),(59,5,'hosk','Participant','-'),(60,6,'cameron','Participant','-'),(61,7,'alex','Participant','-'),(62,8,'kathleen','Participant','-'),(63,9,'monika','Participant','-'),(64,10,'coriander','Participant','-'),(65,11,'bob','Participant','-');
+INSERT INTO `users` VALUES (6,0,'test','Participant','$2y$10$62W1KdCwiFTRSeEWY9JLxe83RSSmGEbK6fTqTEMIyB.8g2lEQowIu'),(55,1,'demo','Participant','demo'),(56,2,'shaun','Participant','shaun'),(57,3,'james','Participant','james'),(58,4,'janet','Participant','janet'),(59,5,'hosk','Participant','hosk'),(60,6,'cameron','Participant','cameron'),(61,7,'alex','Participant','alex'),(62,8,'kathleen','Participant','kathleen'),(63,9,'monika','Participant','monika'),(64,10,'coriander','Participant','coriander'),(65,11,'bob','Participant','bob');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -286,4 +358,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-16 23:01:25
+-- Dump completed on 2018-04-05 11:49:22
