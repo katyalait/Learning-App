@@ -38,13 +38,13 @@ class PagesController < ApplicationController
     if params[:learning_goal] != nil
       entry_new = LearningGoal.new
       entry_new.user_id = Device.find_by(_id: @current_user.aware_device_id).device_id
-      entry_new.topic_id = 5
+      entry_new.topic_id = params[:learning_goal][:topic].to_i
       entry_new.goal = params[:learning_goal][:description]
       entry_new.start_date = Time.now.to_i * 1000
       entry_new.end_date = Date.strptime(params[:learning_goal][:date],"%d/%m/%y").to_time.to_i * 1000
       entry_new.completed = false
       entry_new.apps = (params[:learning_goal][:apps] - [""]).join(",")
-      entry_new.save
+      #entry_new.save
     else
     end
     render 'myGoals'
