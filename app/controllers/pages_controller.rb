@@ -22,6 +22,8 @@ class PagesController < ApplicationController
     @userdevice = Device.find_by(_id: @current_user.aware_device_id).device_id
     @goals = LearningGoal.where(user_id: @userdevice)
 
+    # This code populates the selection menus in the myGoals submission form
+
     @topiclist = Array.new(Topic.count) {}
     index = 0;
     Topic.all.each do |topic| 
@@ -34,6 +36,8 @@ class PagesController < ApplicationController
       @applist[index] = Array[app.application_name, app.application_name]
       index += 1
     end
+
+    # This code runs when a new myGoals submission is made
 
     if params[:learning_goal] != nil
       entry_new = LearningGoal.new
@@ -54,6 +58,9 @@ class PagesController < ApplicationController
   end
 
   def myLocationsThree
+
+  # This is the main code for inserting data given through the myLocations interface into the database
+
     current_user
     @userdevice = Device.find_by(_id: @current_user.aware_device_id).device_id
     @test = ""

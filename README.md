@@ -22,6 +22,6 @@ After you have downloaded all the necessary files and installed the necessary pa
 # Running the Program
 You will run the framework from the git directory with the command `$ rails s`. 
 
-Enter your browser and type 'localhost:3000/' you will be prompted with a login page into which you should enter one of the pre-set user/password combinations. E.g. u: monika p: - 
+Enter your browser and type 'localhost:3000/' you will be prompted with a login page into which you should enter one of the pre-set user/password combinations. E.g. u: monika p: monika
 
 After this you can begin to click around the UI and look at the platform. 

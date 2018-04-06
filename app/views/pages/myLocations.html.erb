@@ -4,199 +4,84 @@
 <%= javascript_include_tag 'jquery' %>
 <%= javascript_include_tag 'bootstrap' %>
 <%= javascript_include_tag 'metisMenu' %>
-<%= javascript_include_tag 'scripts' %> 
+<%= javascript_include_tag 'scripts' %>
 <%= javascript_include_tag 'sb-admin-2' %>
 
 </head>
 <%= render @pages || "top_nav" %>
 <%= render @pages || "side_nav" %>
+<div id="page-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+      <p> </p>
+    </div>
+    <div class="col-lg-12" style="height: 320px">
+      <div id="map-canvas" />
+    </div>
+  </div><!-- <div id="wrapper"> -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">My Locations</h1>
+      <h5><i>We have picked up you being in the following locations. Give us some context for the purpose and duration of your visits.</i></h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-1"></div>
+      <div class="col-lg-10">
+      <!-- <form> -->
+        <form role="form">
+          <div class="form-group">
+            <div class="table">
+              <table class="table table-hover table-condensed">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Visit/Purpose</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Arrived</th>
+                    <th scope="col">Departed</th>
+                    <th scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
 
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p> </p>
-                </div>
-                <div class="col-lg-12" style="height: 320px">
-                    <div id="map-canvas" /> 
-            	</div>
-                </div>
-			<!-- <div id="wrapper"> -->
-		<div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">My Locations</h1>
-                    <h5><i>We have picked up you being in the following locations. Give us some context for the purpose and duration 			of your visits. </i> </h5>
-                </div>
-            </div>
-                  <div class="row">
-				<div class="col-lg-1"></div>
-					<div class="col-lg-10">
-                                                <!-- <form> -->
-                        <form role="form">
-                            <div class="form-group">
-                                <div class="table">
-                                    <table class="table table-hover table-condensed">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col"></th>
-                                                <th scope="col">Visit/Purpose</th>
-                                                <th scope="col">Date</th>
-                                                <th scope="col">Time</th>
-                                                <th scope="col">Arrived</th>
-                                                <th scope="col">Departed</th>
-                                                <th scope="col">Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <% @count = 1%>
-                                                <%= form_for(:context_loc) do |f| %>
-                                                        <% @locts.each do |location| %>
-                                                                <%= f.fields_for location.ID.to_s do |line| %>
+                <!-- This is the main loop to generate the form presented to the user for data submission -->
+
+                  <% @count = 1%>
+                  <%= form_for(:context_loc) do |f| %>
+                    <% @locts.each do |location| %>
+                      <%= f.fields_for location.ID.to_s do |line| %>
                         <% @timestamp = Time.at(location.timestamp / 1000) %>
                         <tr>
-                                <th scope="row"><%= @count =%></th>
-                                <td><%= line.select "purpose", 
-                                        [["Coffee","Coffee"],["Study","Study"],["Entertainment","Entertainment"]],
-                                        {:prompt => "Select One"},{:class => 'form-control'}%>
-
-                                                    <!--<select class="form-control" id="loc1">
-                                                        <option>Select One</option>
-                                                        <option>Coffee</option>
-                                                        <option>Study</option>
-                                                        <option>Entertainment</option>
-                                                    </select> -->
-                                                </td>
-                                                <td><%= @timestamp.strftime("%d/%m/%Y") =%></td>
-                                                <td><%= @timestamp.strftime("%H:%M")=%></td>
-                                                <td><%= line.time_field "arrived", class: 'form-control', placeholder: 'hh:mm'%></td>
-                                                <td><%= line.time_field "departed", class: 'form-control', placeholder: 'hh:mm'%></td>
-                                                <td><%= line.text_field "description", class: 'form-control' %></td>
-                                                <!--<td class="time-column">
-                                                    <input class="form-control" placeholder="hh:mm">
-
-                                                </td>
-                                                <td class="time-column">
-                                                    <input class="form-control" placeholder="hh:mm">
-                                                </td>
-                                                <td><input class="form-control input-sm" id="inputsm<%= @count =%>" type="text"></td> -->
-                                            </tr> 
-                                            <% @count += 1%>
-                                    <% end %>
-                                    <% end %>
-<!--                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>
-                                                    <select class="form-control" id="loc1">
-                                                        <option>Select One</option>
-                                                        <option>Coffee</option>
-                                                        <option>Study</option>
-                                                        <option>Entertainment</option>
-                                                    </select>
-                                                </td>
-                                                <td>10/12/2018</td>
-                                                <td>15:00</td>
-                                                <td class="time-column">
-                                                    <input class="form-control" placeholder="hh:mm">
-
-                                                </td>
-                                                <td class="time-column">
-                                                    <input class="form-control" placeholder="hh:mm">
-                                                </td>
-                                                <td><input class="form-control input-sm" id="inputsm1" type="text"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>
-                                                    <select class="form-control" id="loc2">
-                                                        <option>Select One</option>
-                                                        <option>Coffee</option>
-                                                        <option>Study</option>
-                                                        <option>Entertainment</option>
-                                                    </select>
-                                                </td>
-                                                <td>18/12/2018</td>
-                                                <td>12:00</td>
-                                                <td>
-                                                    <input class="form-control" placeholder="hh:mm">
-                                                </td>
-                                                <td>
-                                                    <input class="form-control" placeholder="hh:mm">
-                                                </td>
-                                                <td><input class="form-control input-sm" id="inputsm2" type="text"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>
-                                                    <select class="form-control" id="loc3">
-                                                        <option>Select One</option>
-                                                        <option>Coffee</option>
-                                                        <option>Study</option>
-                                                        <option>Entertainment</option>
-                                                    </select>
-                                                </td>
-                                                <td>28/12/2018</td>
-                                                <td>10:00</td>
-                                                <td class="time-column">
-                                                    <input class="form-control" placeholder="hh:mm">
-                                                </td>
-                                                <td class="time-column">
-                                                    <input class="form-control" placeholder="hh:mm">
-                                                </td>
-                                                <td><input class="form-control input-sm" id="inputsm3" type="text"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">4</th>
-                                                <td>
-                                                    <select class="form-control" id="loc4">
-                                                        <option>Select One</option>
-                                                        <option>Coffee</option>
-                                                        <option>Study</option>
-                                                        <option>Entertainment</option>
-                                                    </select>
-                                                </td>
-                                                <td>09/01/2018</td>
-                                                <td>22:00</td>
-                                                <td class="time-column">
-                                                    <input class="form-control" placeholder="hh:mm">
-                                                </td>
-                                                <td class="time-column">
-                                                    <input class="form-control" placeholder="hh:mm">
-                                                </td>
-                                                <td><input class="form-control input-sm" id="inputsm4" type="text"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">5</th>
-                                                <td>
-                                                    <select class="form-control" id="loc5">
-                                                        <option>Select One</option>
-                                                        <option>Coffee</option>
-                                                        <option>Study</option>
-                                                        <option>Entertainment</option>
-                                                    </select>
-                                                </td>
-                                                <td>12/01/2018</td>
-                                                <td>11:00</td>
-                                                <td class="time-column">
-                                                    <input class="form-control" placeholder="hh:mm">
-                                                </td>
-                                                <td class="time-column">
-                                                    <input class="form-control" placeholder="hh:mm">
-                                                </td>
-                                                <td><input class="form-control input-sm" id="inputsm5" type="text"></td>
-                                            </tr> -->
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4"></div>
-                                <div class="col-lg-3">
-                                        <%= f.submit "Submit", class: "btn btn-outline btn-primary btn-lg btn-block addTopicButton" %>
-                            <% end %>
-                                </div>
-                            </div>
-                            </form>
-			   </div>
-			</div>		
-		     </div>		
-    		</div>
+                          <th scope="row"><%= @count =%></th>
+                          <td><%= line.select "purpose",
+                            [["Coffee","Coffee"],["Study","Study"],["Entertainment","Entertainment"]],
+                            {:prompt => "Select One"},{:class => 'form-control'}%>
+                        </td>
+                        <td><%= @timestamp.strftime("%d/%m/%Y") =%></td>
+                        <td><%= @timestamp.strftime("%H:%M")=%></td>
+                        <td><%= line.time_field "arrived", class: 'form-control', placeholder: 'hh:mm'%></td>
+                        <td><%= line.time_field "departed", class: 'form-control', placeholder: 'hh:mm'%></td>
+                        <td><%= line.text_field "description", class: 'form-control' %></td>
+                        </tr>
+                        <% @count += 1%>
+                      <% end %>
+                    <% end %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-3">
+              <%= f.submit "Submit", class: "btn btn-outline btn-primary btn-lg btn-block addTopicButton" %>
+            <% end %>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 

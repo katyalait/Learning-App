@@ -5,156 +5,96 @@
 <%= javascript_include_tag 'jquery' %>
 <%= javascript_include_tag 'bootstrap' %>
 <%= javascript_include_tag 'metisMenu' %>
-<%= javascript_include_tag 'scripts' %> 
+<%= javascript_include_tag 'scripts' %>
 <%= javascript_include_tag 'sb-admin-2' %>
-<%= javascript_include_tag 'raphael' %> 
-<%= javascript_include_tag 'morris' %> 
+<%= javascript_include_tag 'raphael' %>
+<%= javascript_include_tag 'morris' %>
 <%= javascript_include_tag 'excanvas' %>
-<%= javascript_include_tag 'myOwn' %> 
+<%= javascript_include_tag 'myOwn' %>
 <%= javascript_include_tag 'jquery.flot' %>
 <%= javascript_include_tag 'jquery.flot.pie' %>
-<%= javascript_include_tag 'jquery.flot.resize' %> 
-<%= javascript_include_tag 'jquery.flot.time' %> 
-<%= javascript_include_tag 'jquery.flot.tooltip' %> 
+<%= javascript_include_tag 'jquery.flot.resize' %>
+<%= javascript_include_tag 'jquery.flot.time' %>
+<%= javascript_include_tag 'jquery.flot.tooltip' %>
 </head>
- <%= render @pages || "top_nav" %>
+<%= render @pages || "top_nav" %>
 <%= render @pages || "side_nav" %>
+  <div id="page-wrapper">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">My Learning Goals</h1>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">Goals for this week:</div><!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Topic Name</th>
+                <th>Goal Description</th>
+                <th>Completion Date</th>
+                <th>App Used</th>
+              </tr>
+            </thead>
 
-		<div id="page-wrapper">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1 class="page-header">My Learning Goals</h1>
-				</div>
-			</div>
+            <!-- This is the display of the goals for a user in the database -->
 
+            <tbody>
+            <% @count = 1%>
+            <% @goals.each do |goal| %>
+              <tr>
+                <td><%= @count %></td>
+                <td><%= Topic.find(goal.topic_id).topic_name%></td>
+                <td><%= goal.goal %></td>
+                <td><%= Time.at(goal.end_date / 1000).strftime("%d/%m/%y")%></td>
+                <td><%= goal.apps %></td>
+              </tr>
+            <% end %>
+            </tbody>
+            </table>
+          </div><!-- /.table-responsive -->
+        </div><!-- /.panel-body -->
+      </div><!-- /.panel -->
+    </div>
+    <div class="col-lg-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">Add new goal</div><!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-lg-6">
 
-			<div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                        	Goals for this week:
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Topic Name</th>
-                                            <th>Goal Description</th>
-                                            <th>Completion Date</th>
-                                            <th>App Used</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <% @count = 1%>
-                                    <% @goals.each do |goal| %>
-                                    <tr>
-                                                <td><%= @count %></td>
-                                                <td><%= Topic.find(goal.topic_id).topic_name%></td>
-                                                <td><%= goal.goal %></td>
-                                                <td><%= Time.at(goal.end_date / 1000).strftime("%d/%m/%y")%></td>
-                                                <td><%= goal.apps %></td>
-                                    </tr>
-                                    <% end %>
-                                        <!--<tr>
-                                            <td>1</td>
-                                            <td>Science</td>
-                                            <td>Organic Chemistry revision</td>
-                                            <td>28/03/18</td>
-                                            <td>Youtube</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>History</td>
-                                            <td>Irish Civil War revision</td>
-                                            <td>30/03/18</td>
-                                            <td>Safari</td>
+            <!-- This is the code for generateing the form for submission of new goals -->
 
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Java</td>
-                                            <td>Recursive Functions</td>
-                                            <td>31/03/18</td>
-                                            <td>Youtube</td>
-                                        </tr>-->
-                                    </tbody>
-                                </table>
-
-
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                        	Add new goal
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            
-                		<div class="row">
-                            <div class="col-lg-6">
-                              <%= form_for :learning_goal do |f| %> <!-- wasn't sure what to put here -->
-                                    <div class="form-group">
-                                        <%= f.label :topic_choice%>
-                                        <%= f.select :topic, @topiclist, {:prompt => "Choose One"}, {:class => 'form-control'}%>
-					<!-- select function here that chooses all the topics related to the user and displays them -->
-                                        
-                                        <!-- <select class="form-control">
-                                            <option>--Choose One--</option>
-                                            <option>Functional Programming</option>
-                                            <option>Accounting</option>
-                                            <option>Financial Forecasting</option>
-                                            <option>Creative Writing</option>
-                                            <option>Javascript</option>
-                                            <option>Java</option>
-                                            <option>Science</option>
-                                            <option>History</option>
-                                        </select> -->
-                                    </div>
-                                    <div class="form-group">
-                                         <%= f.label :goal_description%>
-                                         <%= f.text_field :description, class: 'form-control', placeholder: 'Describe your goal' %>
-                                    </div>
-                                    <div class="form-group">
-                                         <%= f.label :date_to_do_by%>
-                                         <%= f.text_field :date, class: 'form-control', placeholder: 'dd/mm/yy' %>
-                                         <p class="help-block">E.G. 04/04/18</p>
-                                    </div>
-                                    <div class="form-group">
-                                         <%= f.label :application_to_use %>
-                                         <%= f.select :apps, @applist , {}, {:multiple => true, :size => 5, :class => 'form-control'}%>
-                                         <p class="help-block">Hold CTRL to choose multiple</p>
-                                         <!-- selection function that produces all the apps a user uses' -->
-                                         <!--<select multiple class="form-control">
-                                            <option>--Hold CTRL To Choose--</option>
-                                            <option>Whatsapp</option>
-                                            <option>Safari</option>
-                                            <option>Mail</option>
-                                            <option>Youtube</option>
-                                            <option>Kindle</option>
-                                        </select>-->
-                                    </div>
-                                    <%= f.submit "Submit", class: "btn btn-primary" %> 
-                                    <!--- onclick="location.href='myGoals2.html';"  IT NEEDS TO GO TO THIS PAGE-->
-                        <% end %>
-                        </form>
-							        </div>
-                            
-                            <!-- /.col-lg-6 (nested) -->
-					</div>
-                </div>
-				<!-- /.panel-body -->
-            </div>
-
-		</div>
- </div>
+            <%= form_for :learning_goal do |f| %>
+              <div class="form-group">
+                <%= f.label :topic_choice%>
+                <%= f.select :topic, @topiclist, {:prompt => "Choose One"}, {:class => 'form-control'}%>
+              </div>
+              <div class="form-group">
+                <%= f.label :goal_description%>
+                <%= f.text_field :description, class: 'form-control', placeholder: 'Describe your goal' %>
+              </div>
+              <div class="form-group">
+                <%= f.label :date_to_do_by%>
+                <%= f.text_field :date, class: 'form-control', placeholder: 'dd/mm/yy' %>
+                <p class="help-block">E.G. 04/04/18</p>
+              </div>
+              <div class="form-group">
+                <%= f.label :application_to_use %>
+                <%= f.select :apps, @applist , {}, {:multiple => true, :size => 5, :class => 'form-control'}%>
+                <p class="help-block">Hold CTRL to choose multiple</p>
+              </div>
+              <%= f.submit "Submit", class: "btn btn-primary" %>
+            <% end %>
+            </div><!-- /.col-lg-6 (nested) -->
+          </div>
+        </div><!-- /.panel-body -->
+      </div>
+    </div>
+  </div>
 </body>
 </html>
